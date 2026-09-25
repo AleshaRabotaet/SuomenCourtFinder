@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tennis Court Finder — Espoo &amp; Helsinki</title>
+<meta name="description" content="Free tennis court slots at private halls in Espoo and Helsinki, updated every 30 minutes.">
+<style>
+  :root {
+    --bg: #f6f7f9;
+    --card-bg: #ffffff;
+    --text: #1a1d23;
+    --muted: #6b7280;
+    --border: #e5e7eb;
+    --accent: #1d6f42;
+    --accent-contrast: #ffffff;
+    --chip-bg: #eaf6ee;
+    --chip-border: #bfe3cc;
+    --warn-bg: #fff4e5;
+    --warn-border: #f3c98b;
+    --warn-text: #7a4a00;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14161a;
+      --card-bg: #1d2026;
+      --text: #eceef1;
+      --muted: #9aa1ac;
+      --border: #2c3038;
+      --accent: #4cbb7d;
+      --accent-contrast: #0b1210;
+      --chip-bg: #16311f;
+      --chip-border: #2a5c3a;
+      --warn-bg: #3a2c10;
+      --warn-border: #6b4f14;
+      --warn-text: #f0c877;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  header {
+    padding: 16px;
+    border-bottom: 1px solid var(--border);
+    background: var(--card-bg);
+    position: sticky;
+    top: 0;
+    z-index: 5;
+  }
+  h1 {
+    font-size: 1.15rem;
+    margin: 0 0 2px;
+  }
+  .subtitle {
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 12px 12px 40px;
+  }
+  .dates {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding: 12px 0;
+    -webkit-overflow-scrolling: touch;
+  }
+  .date-btn {
+    flex: 0 0 auto;
+    padding: 8px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--card-bg);
+    color: var(--text);
+    font-size: 0.85rem;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .date-btn.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--accent-contrast);
+    font-weight: 600;
+  }
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 14px;
+    font-size: 0.85rem;
+  }
+  .filters label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--muted);
+  }
+  .filters input[type="time"] {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 4px 6px;
+    background: var(--card-bg);
+    color: var(--text);
+  }
+  .venue-toggles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 14px;
+  }
+  .venue-toggle {
+    font-size: 0.78rem;
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--card-bg);
+    color: var(--muted);
+    cursor: pointer;
+  }
+  .venue-toggle.active {
+    border-color: var(--accent);
+    color: var(--accent);
+    font-weight: 600;
+  }
+  .venue-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px;
+    margin-bottom: 12px;
+  }
+  .venue-card h2 {
+    font-size: 1rem;
+    margin: 0 0 2px;
+  }
+  .venue-address {
+    color: var(--muted);
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+  }
+  .court-group {
+    margin-bottom: 8px;
+  }
+  .court-name {
+    font-size: 0.82rem;
+    color: var(--muted);
+    margin-bottom: 6px;
+  }
+  .slots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .slot {
+    display: inline-block;
+    padding: 6px 10px;
+    background: var(--chip-bg);
+    border: 1px solid var(--chip-border);
+    border-radius: 8px;
+    color: var(--text);
+    text-decoration: none;
+    font-size: 0.82rem;
+    font-variant-numeric: tabular-nums;
+  }
+  .slot:active {
+    opacity: 0.7;
+  }
+  .empty {
+    color: var(--muted);
+    font-size: 0.85rem;
+    padding: 8px 0;
+  }
+  .warning {
+    background: var(--warn-bg);
+    border: 1px solid var(--warn-border);
+    color: var(--warn-text);
+    border-radius: 10px;
+    padding: 10px 12px;
+    font-size: 0.82rem;
+    margin-bottom: 14px;
+  }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.75rem;
+    padding: 20px 12px 30px;
+  }
+  footer a { color: inherit; }
+</style>
+</head>
+<body>
+<header>
+  <h1>🎾 Tennis Court Finder</h1>
+  <div class="subtitle" id="subtitle">Loading…</div>
+</header>
+<main>
+  <div class="dates" id="dates"></div>
+  <div class="filters">
+    <label>From <input type="time" id="fromTime"></label>
+    <label>To <input type="time" id="toTime"></label>
+  </div>
+  <div class="venue-toggles" id="venueToggles"></div>
+  <div id="warnings"></div>
+  <div id="results"></div>
+</main>
+<footer>
+  Availability refreshes every ~30 minutes and links out to each hall's own booking site to reserve.<br>
+  Private halls only, Espoo &amp; Helsinki. Not affiliated with any venue listed.
+</footer>
+
+<script>
+(function () {
+  const state = {
+    data: null,
+    selectedDate: null,
+    fromTime: "",
+    toTime: "",
+    hiddenVenues: new Set(),
+  };
+
+  function fmtDateLabel(iso) {
+    const d = new Date(iso + "T00:00:00");
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    const diffDays = Math.round((d - today) / 86400000);
+    const weekday = d.toLocaleDateString("en-GB", { weekday: "short" });
+    const dm = d.toLocaleDateString("en-GB", { day: "2-digit", month: "2-digit" });
+    if (diffDays === 0) return "Today";
+    if (diffDays === 1) return "Tomorrow";
+    return `${weekday} ${dm}`;
+  }
+
+  function renderDates() {
+    const dates = [...new Set(state.data.slots.map((s) => s.date))].sort();
+    if (!state.selectedDate || !dates.includes(state.selectedDate)) {
+      state.selectedDate = dates[0] || null;
+    }
+    const el = document.getElementById("dates");
+    el.innerHTML = "";
+    dates.forEach((date) => {
+      const btn = document.createElement("button");
+      btn.className = "date-btn" + (date === state.selectedDate ? " active" : "");
+      btn.textContent = fmtDateLabel(date);
+      btn.onclick = () => {
+        state.selectedDate = date;
+        render();
+      };
+      el.appendChild(btn);
+    });
+  }
+
+  function renderVenueToggles() {
+    const el = document.getElementById("venueToggles");
+    el.innerHTML = "";
+    state.data.venues.forEach((v) => {
+      const btn = document.createElement("button");
+      btn.className = "venue-toggle" + (state.hiddenVenues.has(v.name) ? "" : " active");
+      btn.textContent = v.name.split(" (")[0];
+      btn.onclick = () => {
+        if (state.hiddenVenues.has(v.name)) state.hiddenVenues.delete(v.name);
+        else state.hiddenVenues.add(v.name);
+        render();
+      };
+      el.appendChild(btn);
+    });
+  }
+
+  function renderWarnings() {
+    const el = document.getElementById("warnings");
+    const failed = state.data.venues.filter((v) => v.status !== "ok");
+    if (failed.length === 0) {
+      el.innerHTML = "";
+      return;
+    }
+    el.innerHTML =
+      '<div class="warning">⚠️ Could not update: ' +
+      failed.map((v) => v.name).join(", ") +
+      ". Other venues below are unaffected.</div>";
+  }
+
+  function timeToMinutes(t) {
+    const [h, m] = t.split(":").map(Number);
+    return h * 60 + m;
+  }
+
+  function renderResults() {
+    const el = document.getElementById("results");
+    el.innerHTML = "";
+
+    const fromMin = state.fromTime ? timeToMinutes(state.fromTime) : -1;
+    const toMin = state.toTime ? timeToMinutes(state.toTime) : Infinity;
+
+    let anyShown = false;
+
+    state.data.venues
+      .filter((v) => !state.hiddenVenues.has(v.name))
+      .forEach((venue) => {
+        const slots = state.data.slots.filter((s) => {
+          if (s.venue !== venue.name || s.date !== state.selectedDate) return false;
+          const startMin = timeToMinutes(s.start);
+          return startMin >= fromMin && startMin <= toMin;
+        });
+
+        const card = document.createElement("div");
+        card.className = "venue-card";
+
+        let html = `<h2>${venue.name}</h2><div class="venue-address">${venue.address}</div>`;
+
+        if (venue.status !== "ok") {
+          html += '<div class="empty">Data unavailable right now.</div>';
+        } else if (slots.length === 0) {
+          html += '<div class="empty">No free slots for this date/time.</div>';
+        } else {
+          anyShown = true;
+          const byCourt = {};
+          slots.forEach((s) => {
+            (byCourt[s.court] = byCourt[s.court] || []).push(s);
+          });
+          Object.keys(byCourt).sort().forEach((court) => {
+            const courtSlots = byCourt[court].sort((a, b) => a.start.localeCompare(b.start));
+            html += `<div class="court-group"><div class="court-name">${court}</div><div class="slots">`;
+            courtSlots.forEach((s) => {
+              html += `<a class="slot" href="${venue.booking_url}" target="_blank" rel="noopener">${s.start}–${s.end}</a>`;
+            });
+            html += "</div></div>";
+          });
+        }
+
+        card.innerHTML = html;
+        el.appendChild(card);
+      });
+
+    if (!anyShown && state.data.venues.every((v) => v.status === "ok")) {
+      // still show the per-venue "no slots" cards above; nothing extra needed
+    }
+  }
+
+  function render() {
+    renderDates();
+    renderVenueToggles();
+    renderWarnings();
+    renderResults();
+  }
+
+  function renderSubtitle() {
+    const generated = new Date(state.data.generated_at);
+    const label = generated.toLocaleTimeString("en-GB", {
+      hour: "2-digit",
+      minute: "2-digit",
+      timeZone: "Europe/Helsinki",
+    });
+    document.getElementById("subtitle").textContent =
+      `Espoo & Helsinki, private halls · updated ${label} (Helsinki time)`;
+  }
+
+  fetch("./data/availability.json", { cache: "no-store" })
+    .then((r) => r.json())
+    .then((data) => {
+      state.data = data;
+      renderSubtitle();
+      render();
+    })
+    .catch((err) => {
+      document.getElementById("subtitle").textContent = "Failed to load availability data.";
+      document.getElementById("results").innerHTML =
+        '<div class="warning">Could not load data/availability.json. Try refreshing in a bit.</div>';
+      console.error(err);
+    });
+
+  document.getElementById("fromTime").addEventListener("change", (e) => {
+    state.fromTime = e.target.value;
+    render();
+  });
+  document.getElementById("toTime").addEventListener("change", (e) => {
+    state.toTime = e.target.value;
+    render();
+  });
+})();
+</script>
+</body>
+</html>
