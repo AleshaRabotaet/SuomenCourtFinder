@@ -6,6 +6,9 @@ halls, without checking each one's own booking site by hand.
 **Live site:** enable GitHub Pages for this repo (Settings → Pages → Deploy
 from branch → `main` / `/docs`) and it serves `docs/index.html`.
 
+**Support:** if this saves you time, consider [buying me a coffee on
+Ko-fi](https://ko-fi.com/alesharabotaet).
+
 ## How it works
 
 - `fetchers/` — one adapter per booking engine. Each returns a list of
