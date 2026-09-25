@@ -15,7 +15,9 @@ from branch → `main` / `/docs`) and it serves `docs/index.html`.
   - `cintoia.py` — reads the public Firebase Realtime Database index + S3
     JSON files that back the Cintoia Falcon booking app. This one engine
     covers multiple clubs (Tapiolan Tennispuisto, Martinmäen Tenniskeskus /
-    Cherry Arena / Aktia Tennishall) — same code, different `customerid`.
+    Cherry Arena / Aktia Tennishall, Talin/Taivallahden Tenniskeskus,
+    Rosegarden) — same code, different `customerid` (and, when one backend
+    hosts more than one venue or sport, a `cintoia_categories` filter).
 - `fetchers/venues.py` — the list of covered venues and which fetcher/config
   each one uses. Adding a venue on an already-supported engine is just a new
   entry here.

@@ -47,4 +47,44 @@ VENUES = [
         "cintoia_origin": "https://evs.feel.cintoia.com",
         "days_ahead": 14,
     },
+    {
+        "name": "Talin Tenniskeskus",
+        "city": "Helsinki",
+        "address": "Kutomokuja 4, 00380 Helsinki",
+        "booking_url": "https://talitaivallahti.feel.cintoia.com/",
+        "date_query_param": "day",
+        "fetcher": "cintoia",
+        "cintoia_customerid": "tali-2GjtFLost8pDf0dWwmNc",
+        "cintoia_origin": "https://talitaivallahti.feel.cintoia.com",
+        # Tali and Taivallahti share this one Cintoia backend; split by
+        # each court's category (see fetchers/cintoia.py).
+        "cintoia_categories": ["tennis", "ulkokentät"],
+        "days_ahead": 14,
+    },
+    {
+        "name": "Taivallahden Tenniskeskus",
+        "city": "Helsinki",
+        "address": "Hiekkarannantie 2, 00100 Helsinki",
+        "booking_url": "https://talitaivallahti.feel.cintoia.com/",
+        "date_query_param": "day",
+        "fetcher": "cintoia",
+        "cintoia_customerid": "tali-2GjtFLost8pDf0dWwmNc",
+        "cintoia_origin": "https://talitaivallahti.feel.cintoia.com",
+        "cintoia_categories": ["tennis taivallahti"],
+        "days_ahead": 14,
+    },
+    {
+        "name": "Rosegarden",
+        "city": "Espoo",
+        "address": "Turveradantie 16, 02180 Espoo",
+        "booking_url": "https://rosegarden.cintoia.com/",
+        "date_query_param": "day",
+        "fetcher": "cintoia",
+        "cintoia_customerid": "rosegarden-PIYZk2Bv",
+        "cintoia_origin": "https://rosegarden.cintoia.com",
+        # Rosegarden's backend also has padel courts and ball machines;
+        # this finder is tennis-only.
+        "cintoia_categories": ["tennis"],
+        "days_ahead": 15,
+    },
 ]
