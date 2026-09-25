@@ -246,6 +246,13 @@
     padding-right: calc(12px + env(safe-area-inset-right, 0px));
   }
   footer a { color: inherit; }
+  footer .kofi-link {
+    display: inline-block;
+    margin-top: 8px;
+    color: var(--accent);
+    font-weight: 600;
+    text-decoration: none;
+  }
 
   @media (max-width: 480px) {
     header {
@@ -308,7 +315,8 @@
 </main>
 <footer>
   Availability refreshes every ~30 minutes and links out to each hall's own booking site to reserve.<br>
-  Private halls only, Espoo &amp; Helsinki. Not affiliated with any venue listed.
+  Private halls only, Espoo &amp; Helsinki. Not affiliated with any venue listed.<br>
+  <a class="kofi-link" href="https://ko-fi.com/alesharabotaet" target="_blank" rel="noopener">☕ Support this project on Ko-fi</a>
 </footer>
 
 <script>
