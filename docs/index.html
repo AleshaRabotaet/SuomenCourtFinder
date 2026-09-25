@@ -235,6 +235,7 @@
     selectedDate: null,
     fromTime: "",
     toTime: "",
+    fromTimeAuto: true,
     hiddenVenues: new Set(),
   };
 
@@ -267,6 +268,28 @@
     return `${h}:${m}`;
   }
 
+  function currentHelsinkiDateISO() {
+    const parts = new Intl.DateTimeFormat("en-GB", {
+      timeZone: "Europe/Helsinki",
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+    }).formatToParts(new Date());
+    const y = parts.find((p) => p.type === "year").value;
+    const m = parts.find((p) => p.type === "month").value;
+    const d = parts.find((p) => p.type === "day").value;
+    return `${y}-${m}-${d}`;
+  }
+
+  // Keeps the "From" filter at "now" on today and at "earliest" (no lower
+  // bound) on any other day, unless the user has manually picked a value.
+  function applyAutoFromTime() {
+    if (!state.fromTimeAuto || !state.selectedDate) return;
+    const isToday = state.selectedDate === currentHelsinkiDateISO();
+    state.fromTime = isToday ? roundUpToStep(currentHelsinkiTime(), 30) : "";
+    document.getElementById("fromTime").value = state.fromTime;
+  }
+
   function roundUpToStep(hhmm, stepMinutes) {
     const total = timeToMinutes(hhmm);
     const rounded = Math.min(Math.ceil(total / stepMinutes) * stepMinutes, 23 * 60 + 30);
@@ -290,6 +313,7 @@
     if (!state.selectedDate || !dates.includes(state.selectedDate)) {
       state.selectedDate = dates[0] || null;
     }
+    applyAutoFromTime();
     const el = document.getElementById("dates");
     el.innerHTML = "";
     dates.forEach((date) => {
@@ -420,8 +444,6 @@
     .then((r) => r.json())
     .then((data) => {
       state.data = data;
-      state.fromTime = roundUpToStep(currentHelsinkiTime(), 30);
-      fromTimeEl.value = state.fromTime;
       renderSubtitle();
       render();
     })
@@ -434,6 +456,7 @@
 
   fromTimeEl.addEventListener("change", (e) => {
     state.fromTime = e.target.value;
+    state.fromTimeAuto = false;
     render();
   });
   toTimeEl.addEventListener("change", (e) => {
