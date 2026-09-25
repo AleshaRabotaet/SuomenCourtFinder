@@ -230,6 +230,8 @@
 
 <script>
 (function () {
+  const PREFS_KEY = "suomencourtfinder:prefs:v1";
+
   const state = {
     data: null,
     selectedDate: null,
@@ -238,6 +240,40 @@
     fromTimeAuto: true,
     hiddenVenues: new Set(),
   };
+
+  function loadPrefs() {
+    try {
+      const raw = localStorage.getItem(PREFS_KEY);
+      return raw ? JSON.parse(raw) : null;
+    } catch (err) {
+      return null;
+    }
+  }
+
+  function savePrefs() {
+    try {
+      localStorage.setItem(
+        PREFS_KEY,
+        JSON.stringify({
+          fromTime: state.fromTime,
+          fromTimeAuto: state.fromTimeAuto,
+          toTime: state.toTime,
+          hiddenVenues: [...state.hiddenVenues],
+        })
+      );
+    } catch (err) {
+      // localStorage unavailable (private mode, quota, etc.) - not fatal.
+    }
+  }
+
+  function applyPrefs() {
+    const prefs = loadPrefs();
+    if (!prefs) return;
+    if (typeof prefs.toTime === "string") state.toTime = prefs.toTime;
+    if (typeof prefs.fromTimeAuto === "boolean") state.fromTimeAuto = prefs.fromTimeAuto;
+    if (!state.fromTimeAuto && typeof prefs.fromTime === "string") state.fromTime = prefs.fromTime;
+    if (Array.isArray(prefs.hiddenVenues)) state.hiddenVenues = new Set(prefs.hiddenVenues);
+  }
 
   function minutesToTime(total) {
     const h = Math.floor(total / 60);
@@ -345,6 +381,7 @@
       btn.onclick = () => {
         if (state.hiddenVenues.has(v.name)) state.hiddenVenues.delete(v.name);
         else state.hiddenVenues.add(v.name);
+        savePrefs();
         render();
       };
       el.appendChild(btn);
@@ -367,6 +404,21 @@
   function timeToMinutes(t) {
     const [h, m] = t.split(":").map(Number);
     return h * 60 + m;
+  }
+
+  // Deep-links the viewed date into the venue's own booking site so the
+  // visitor lands on the same day they were looking at here, instead of
+  // whatever the venue's site defaults to.
+  function bookingUrlForDate(venue, date) {
+    if (!venue.date_query_param || !date) return venue.booking_url;
+    const sep = venue.booking_url.includes("?") ? "&" : "?";
+    return (
+      venue.booking_url +
+      sep +
+      encodeURIComponent(venue.date_query_param) +
+      "=" +
+      encodeURIComponent(date)
+    );
   }
 
   function renderResults() {
@@ -402,8 +454,9 @@
             (a, b) => a.start.localeCompare(b.start) || a.court.localeCompare(b.court)
           );
           html += '<div class="slots">';
+          const bookingUrl = bookingUrlForDate(venue, state.selectedDate);
           sorted.forEach((s) => {
-            html += `<a class="slot" href="${venue.booking_url}" target="_blank" rel="noopener">${s.start}–${s.end} · ${s.court}</a>`;
+            html += `<a class="slot" href="${bookingUrl}" target="_blank" rel="noopener">${s.start}–${s.end} · ${s.court}</a>`;
           });
           html += "</div>";
         }
@@ -439,6 +492,9 @@
   const toTimeEl = document.getElementById("toTime");
   buildTimeOptions(fromTimeEl);
   buildTimeOptions(toTimeEl);
+  applyPrefs();
+  toTimeEl.value = state.toTime;
+  if (!state.fromTimeAuto) fromTimeEl.value = state.fromTime;
 
   fetch("./data/availability.json", { cache: "no-store" })
     .then((r) => r.json())
@@ -457,10 +513,12 @@
   fromTimeEl.addEventListener("change", (e) => {
     state.fromTime = e.target.value;
     state.fromTimeAuto = false;
+    savePrefs();
     render();
   });
   toTimeEl.addEventListener("change", (e) => {
     state.toTime = e.target.value;
+    savePrefs();
     render();
   });
   document.getElementById("dateInput").addEventListener("change", (e) => {

@@ -14,6 +14,9 @@ VENUES = [
         "city": "Espoo",
         "address": "Olarinniityntie 8, 02210 Espoo",
         "booking_url": "https://play.fi/smashcenter/booking/booking-calendar?BookingCalForm%5Bp_laji%5D=7",
+        # play.fi's own calendar reads the target day from this same query
+        # param (see fetchers/playfi.py's BookingCalForm[p_pvm]).
+        "date_query_param": "BookingCalForm[p_pvm]",
         "fetcher": "playfi",
         "playfi_slug": "smashcenter",
         "playfi_location": "1",
@@ -25,6 +28,9 @@ VENUES = [
         "city": "Espoo",
         "address": "Tuulikuja 1, 02100 Espoo",
         "booking_url": "https://tennispuisto.cintoia.com/",
+        # Cintoia's booking app reads the initial selected day from ?day=
+        # (YYYY-MM-DD) on load.
+        "date_query_param": "day",
         "fetcher": "cintoia",
         "cintoia_customerid": "tennispuisto-rTVILEOT",
         "cintoia_origin": "https://tennispuisto.cintoia.com",
@@ -35,6 +41,7 @@ VENUES = [
         "city": "Espoo",
         "address": "Martinkallio 4, 02270 Espoo",
         "booking_url": "https://evs.feel.cintoia.com/",
+        "date_query_param": "day",
         "fetcher": "cintoia",
         "cintoia_customerid": "evs-4FD8m7rCa7wOuCADvzZZ",
         "cintoia_origin": "https://evs.feel.cintoia.com",

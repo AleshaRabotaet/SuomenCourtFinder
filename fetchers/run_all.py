@@ -37,6 +37,7 @@ def main() -> None:
             "city": venue["city"],
             "address": venue["address"],
             "booking_url": venue["booking_url"],
+            "date_query_param": venue.get("date_query_param"),
             "status": "ok",
             "error": None,
             "slot_count": 0,
