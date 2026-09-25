@@ -18,7 +18,7 @@ VENUES = [
         "playfi_slug": "smashcenter",
         "playfi_location": "1",
         "playfi_sport": "7",
-        "days_ahead": 7,
+        "days_ahead": 14,
     },
     {
         "name": "Tapiolan Tennispuisto",
@@ -28,7 +28,7 @@ VENUES = [
         "fetcher": "cintoia",
         "cintoia_customerid": "tennispuisto-rTVILEOT",
         "cintoia_origin": "https://tennispuisto.cintoia.com",
-        "days_ahead": 7,
+        "days_ahead": 14,
     },
     {
         "name": "Martinmäen Tenniskeskus (Cherry Arena / Aktia Tennishall)",
@@ -38,6 +38,6 @@ VENUES = [
         "fetcher": "cintoia",
         "cintoia_customerid": "evs-4FD8m7rCa7wOuCADvzZZ",
         "cintoia_origin": "https://evs.feel.cintoia.com",
-        "days_ahead": 7,
+        "days_ahead": 14,
     },
 ]
