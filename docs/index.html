@@ -38,6 +38,9 @@
     }
   }
   * { box-sizing: border-box; }
+  input, select, button {
+    font-family: inherit;
+  }
   body {
     margin: 0;
     background: var(--bg);
@@ -127,6 +130,12 @@
     background: var(--card-bg);
     color: var(--text);
   }
+  .filter-icon {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    color: var(--muted);
+  }
   .venue-toggles {
     display: flex;
     flex-wrap: wrap;
@@ -203,6 +212,27 @@
     padding: 20px 12px 30px;
   }
   footer a { color: inherit; }
+
+  @media (max-width: 480px) {
+    header { padding: 12px 14px; }
+    h1 { font-size: 1.05rem; }
+    .subtitle { font-size: 0.78rem; }
+    main { padding: 10px 10px 32px; }
+    .dates-row {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .date-input { width: 100%; }
+    .filters {
+      font-size: 0.8rem;
+      gap: 8px 12px;
+    }
+    .filters select { font-size: 0.8rem; }
+    .venue-toggle { padding: 7px 12px; }
+    .venue-card { padding: 12px; }
+    .venue-card h2 { font-size: 0.95rem; }
+    .slot { padding: 7px 10px; }
+  }
 </style>
 </head>
 <body>
@@ -216,9 +246,17 @@
     <input type="date" class="date-input" id="dateInput">
   </div>
   <div class="filters">
-    <label>From <select id="fromTime"></select></label>
-    <label>To <select id="toTime"></select></label>
-    <label>Court <select id="courtType">
+    <label>
+      <svg class="filter-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 16 14"></polyline></svg>
+      From <select id="fromTime"></select>
+    </label>
+    <label>
+      <svg class="filter-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 16 14"></polyline></svg>
+      To <select id="toTime"></select>
+    </label>
+    <label>
+      <svg class="filter-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"></rect><line x1="12" y1="3" x2="12" y2="21"></line><line x1="3" y1="12" x2="21" y2="12"></line></svg>
+      Court <select id="courtType">
       <option value="all">All</option>
       <option value="indoor">Indoor</option>
       <option value="outdoor">Outdoor</option>
