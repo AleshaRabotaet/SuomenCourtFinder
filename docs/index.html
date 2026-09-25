@@ -218,6 +218,11 @@
   <div class="filters">
     <label>From <select id="fromTime"></select></label>
     <label>To <select id="toTime"></select></label>
+    <label>Court <select id="courtType">
+      <option value="all">All</option>
+      <option value="indoor">Indoor</option>
+      <option value="outdoor">Outdoor</option>
+    </select></label>
   </div>
   <div class="venue-toggles" id="venueToggles"></div>
   <div id="warnings"></div>
@@ -239,6 +244,7 @@
     toTime: "",
     fromTimeAuto: true,
     hiddenVenues: new Set(),
+    courtType: "all",
   };
 
   function loadPrefs() {
@@ -259,6 +265,7 @@
           fromTimeAuto: state.fromTimeAuto,
           toTime: state.toTime,
           hiddenVenues: [...state.hiddenVenues],
+          courtType: state.courtType,
         })
       );
     } catch (err) {
@@ -273,6 +280,7 @@
     if (typeof prefs.fromTimeAuto === "boolean") state.fromTimeAuto = prefs.fromTimeAuto;
     if (!state.fromTimeAuto && typeof prefs.fromTime === "string") state.fromTime = prefs.fromTime;
     if (Array.isArray(prefs.hiddenVenues)) state.hiddenVenues = new Set(prefs.hiddenVenues);
+    if (typeof prefs.courtType === "string") state.courtType = prefs.courtType;
   }
 
   function minutesToTime(total) {
@@ -406,6 +414,10 @@
     return h * 60 + m;
   }
 
+  function isOutdoorCourt(courtName) {
+    return /massa|ulko/i.test(courtName);
+  }
+
   // Deep-links the viewed date into the venue's own booking site so the
   // visitor lands on the same day they were looking at here, instead of
   // whatever the venue's site defaults to.
@@ -436,7 +448,13 @@
         const slots = state.data.slots.filter((s) => {
           if (s.venue !== venue.name || s.date !== state.selectedDate) return false;
           const startMin = timeToMinutes(s.start);
-          return startMin >= fromMin && startMin <= toMin;
+          if (startMin < fromMin || startMin > toMin) return false;
+          if (state.courtType !== "all") {
+            const outdoor = isOutdoorCourt(s.court);
+            if (state.courtType === "outdoor" && !outdoor) return false;
+            if (state.courtType === "indoor" && outdoor) return false;
+          }
+          return true;
         });
 
         const card = document.createElement("div");
@@ -490,11 +508,13 @@
 
   const fromTimeEl = document.getElementById("fromTime");
   const toTimeEl = document.getElementById("toTime");
+  const courtTypeEl = document.getElementById("courtType");
   buildTimeOptions(fromTimeEl);
   buildTimeOptions(toTimeEl);
   applyPrefs();
   toTimeEl.value = state.toTime;
   if (!state.fromTimeAuto) fromTimeEl.value = state.fromTime;
+  courtTypeEl.value = state.courtType;
 
   fetch("./data/availability.json", { cache: "no-store" })
     .then((r) => r.json())
@@ -518,6 +538,11 @@
   });
   toTimeEl.addEventListener("change", (e) => {
     state.toTime = e.target.value;
+    savePrefs();
+    render();
+  });
+  courtTypeEl.addEventListener("change", (e) => {
+    state.courtType = e.target.value;
     savePrefs();
     render();
   });
