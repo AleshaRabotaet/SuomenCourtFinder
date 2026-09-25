@@ -246,12 +246,29 @@
     padding-right: calc(12px + env(safe-area-inset-right, 0px));
   }
   footer a { color: inherit; }
-  footer .kofi-link {
-    display: inline-block;
-    margin-top: 8px;
-    color: var(--accent);
+
+  .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .kofi-btn {
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 4px;
+    padding: 7px 14px;
+    border-radius: 999px;
+    background: var(--accent);
+    color: var(--accent-contrast);
+    font-size: 0.8rem;
     font-weight: 600;
     text-decoration: none;
+    white-space: nowrap;
+  }
+  .kofi-btn:active {
+    opacity: 0.7;
   }
 
   @media (max-width: 480px) {
@@ -261,8 +278,18 @@
       padding-left: calc(14px + env(safe-area-inset-left, 0px));
       padding-right: calc(14px + env(safe-area-inset-right, 0px));
     }
-    h1 { font-size: 1.05rem; }
+    h1 {
+      font-size: 1.05rem;
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
     .subtitle { font-size: 0.78rem; }
+    .kofi-btn {
+      padding: 6px 11px;
+      font-size: 0.74rem;
+    }
     main {
       padding: 10px 10px 32px;
       padding-left: calc(10px + env(safe-area-inset-left, 0px));
@@ -284,7 +311,10 @@
 </head>
 <body>
 <header>
-  <h1>🎾 Tennis Court Finder</h1>
+  <div class="header-top">
+    <h1>🎾 Tennis Court Finder</h1>
+    <a class="kofi-btn" href="https://ko-fi.com/alesharabotaet" target="_blank" rel="noopener">☕ Support</a>
+  </div>
   <div class="subtitle" id="subtitle">Loading…</div>
 </header>
 <main>
@@ -315,8 +345,7 @@
 </main>
 <footer>
   Availability refreshes every ~30 minutes and links out to each hall's own booking site to reserve.<br>
-  Private halls only, Espoo &amp; Helsinki. Not affiliated with any venue listed.<br>
-  <a class="kofi-link" href="https://ko-fi.com/alesharabotaet" target="_blank" rel="noopener">☕ Support this project on Ko-fi</a>
+  Private halls only, Espoo &amp; Helsinki. Not affiliated with any venue listed.
 </footer>
 
 <script>
