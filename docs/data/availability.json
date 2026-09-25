@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T19:07:57+00:00",
+  "generated_at": "2026-09-25T19:15:26+00:00",
   "venues": [
     {
       "name": "Smash-Espoo (Olarin Tennishalli)",
@@ -19,7 +19,7 @@
       "date_query_param": "day",
       "status": "ok",
       "error": null,
-      "slot_count": 262
+      "slot_count": 261
     },
     {
       "name": "Martinmäen Tenniskeskus (Cherry Arena / Aktia Tennishall)",
@@ -39,7 +39,7 @@
       "date_query_param": "day",
       "status": "ok",
       "error": null,
-      "slot_count": 3641
+      "slot_count": 3640
     },
     {
       "name": "Taivallahden Tenniskeskus",
@@ -5768,7 +5768,7 @@
       "venue": "Smash-Espoo (Olarin Tennishalli)"
     },
     {
-      "court": "Sisätennis4",
+      "court": "Court 5Ra03T",
       "date": "2026-09-25",
       "start": "08:00",
       "end": "09:00",
@@ -5776,7 +5776,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis7",
+      "court": "Court rvP7cw",
       "date": "2026-09-25",
       "start": "21:00",
       "end": "22:00",
@@ -5784,15 +5784,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis4",
-      "date": "2026-09-26",
-      "start": "18:00",
-      "end": "19:00",
-      "available": true,
-      "venue": "Tapiolan Tennispuisto"
-    },
-    {
-      "court": "Sisätennis4",
+      "court": "Court 5Ra03T",
       "date": "2026-09-26",
       "start": "19:00",
       "end": "20:00",
@@ -5800,7 +5792,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis4",
+      "court": "Court 5Ra03T",
       "date": "2026-09-26",
       "start": "20:00",
       "end": "21:00",
@@ -5808,7 +5800,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis4",
+      "court": "Court 5Ra03T",
       "date": "2026-09-26",
       "start": "21:00",
       "end": "22:00",
@@ -5816,7 +5808,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis3",
+      "court": "Court Dzivpw",
       "date": "2026-09-26",
       "start": "17:30",
       "end": "18:30",
@@ -5824,7 +5816,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis3",
+      "court": "Court Dzivpw",
       "date": "2026-09-26",
       "start": "18:30",
       "end": "19:30",
@@ -5832,7 +5824,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis3",
+      "court": "Court Dzivpw",
       "date": "2026-09-26",
       "start": "19:30",
       "end": "20:30",
@@ -5840,7 +5832,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis3",
+      "court": "Court Dzivpw",
       "date": "2026-09-26",
       "start": "20:30",
       "end": "21:30",
@@ -5848,7 +5840,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis6",
+      "court": "Court Nr7QxI",
       "date": "2026-09-26",
       "start": "18:00",
       "end": "19:00",
@@ -5856,7 +5848,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis6",
+      "court": "Court Nr7QxI",
       "date": "2026-09-26",
       "start": "19:00",
       "end": "20:00",
@@ -5864,7 +5856,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis6",
+      "court": "Court Nr7QxI",
       "date": "2026-09-26",
       "start": "20:00",
       "end": "21:00",
@@ -5872,7 +5864,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis6",
+      "court": "Court Nr7QxI",
       "date": "2026-09-26",
       "start": "21:00",
       "end": "22:00",
@@ -5880,7 +5872,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis2",
+      "court": "Court loqQpj",
       "date": "2026-09-26",
       "start": "08:30",
       "end": "09:30",
@@ -5888,7 +5880,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis2",
+      "court": "Court loqQpj",
       "date": "2026-09-26",
       "start": "16:30",
       "end": "17:30",
@@ -5896,7 +5888,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis2",
+      "court": "Court loqQpj",
       "date": "2026-09-26",
       "start": "17:30",
       "end": "18:30",
@@ -5904,7 +5896,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis2",
+      "court": "Court loqQpj",
       "date": "2026-09-26",
       "start": "18:30",
       "end": "19:30",
@@ -5912,7 +5904,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis2",
+      "court": "Court loqQpj",
       "date": "2026-09-26",
       "start": "20:30",
       "end": "21:30",
@@ -5920,7 +5912,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis1",
+      "court": "Court mnmCah",
       "date": "2026-09-26",
       "start": "18:30",
       "end": "19:30",
@@ -5928,7 +5920,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis1",
+      "court": "Court mnmCah",
       "date": "2026-09-26",
       "start": "20:30",
       "end": "21:30",
@@ -5936,7 +5928,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis7",
+      "court": "Court rvP7cw",
       "date": "2026-09-26",
       "start": "16:00",
       "end": "17:00",
@@ -5944,7 +5936,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis7",
+      "court": "Court rvP7cw",
       "date": "2026-09-26",
       "start": "18:00",
       "end": "19:00",
@@ -5952,7 +5944,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis7",
+      "court": "Court rvP7cw",
       "date": "2026-09-26",
       "start": "19:00",
       "end": "20:00",
@@ -5960,7 +5952,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis7",
+      "court": "Court rvP7cw",
       "date": "2026-09-26",
       "start": "20:00",
       "end": "21:00",
@@ -5968,7 +5960,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis7",
+      "court": "Court rvP7cw",
       "date": "2026-09-26",
       "start": "21:00",
       "end": "22:00",
@@ -5976,7 +5968,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis5",
+      "court": "Court uSqQ7x",
       "date": "2026-09-26",
       "start": "18:00",
       "end": "19:00",
@@ -5984,7 +5976,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis5",
+      "court": "Court uSqQ7x",
       "date": "2026-09-26",
       "start": "19:00",
       "end": "20:00",
@@ -5992,7 +5984,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis5",
+      "court": "Court uSqQ7x",
       "date": "2026-09-26",
       "start": "20:00",
       "end": "21:00",
@@ -6000,7 +5992,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis5",
+      "court": "Court uSqQ7x",
       "date": "2026-09-26",
       "start": "21:00",
       "end": "22:00",
@@ -6008,7 +6000,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis4",
+      "court": "Court 5Ra03T",
       "date": "2026-09-27",
       "start": "21:00",
       "end": "22:00",
@@ -6016,7 +6008,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis3",
+      "court": "Court Dzivpw",
       "date": "2026-09-27",
       "start": "10:30",
       "end": "11:30",
@@ -6024,7 +6016,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis3",
+      "court": "Court Dzivpw",
       "date": "2026-09-27",
       "start": "11:30",
       "end": "12:30",
@@ -6032,7 +6024,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-27",
       "start": "09:00",
       "end": "10:00",
@@ -6040,7 +6032,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-27",
       "start": "10:00",
       "end": "11:00",
@@ -6048,7 +6040,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-27",
       "start": "11:00",
       "end": "12:00",
@@ -6056,7 +6048,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-27",
       "start": "12:00",
       "end": "13:00",
@@ -6064,7 +6056,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-27",
       "start": "13:00",
       "end": "14:00",
@@ -6072,7 +6064,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-27",
       "start": "14:00",
       "end": "15:00",
@@ -6080,7 +6072,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-27",
       "start": "15:00",
       "end": "16:00",
@@ -6088,7 +6080,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-27",
       "start": "16:00",
       "end": "17:00",
@@ -6096,7 +6088,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-27",
       "start": "17:00",
       "end": "18:00",
@@ -6104,7 +6096,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-27",
       "start": "18:00",
       "end": "19:00",
@@ -6112,7 +6104,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-27",
       "start": "19:00",
       "end": "20:00",
@@ -6120,7 +6112,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-27",
       "start": "20:00",
       "end": "21:00",
@@ -6128,7 +6120,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis6",
+      "court": "Court Nr7QxI",
       "date": "2026-09-27",
       "start": "09:00",
       "end": "10:00",
@@ -6136,7 +6128,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis6",
+      "court": "Court Nr7QxI",
       "date": "2026-09-27",
       "start": "21:00",
       "end": "22:00",
@@ -6144,7 +6136,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis2",
+      "court": "Court loqQpj",
       "date": "2026-09-27",
       "start": "14:30",
       "end": "15:30",
@@ -6152,7 +6144,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis2",
+      "court": "Court loqQpj",
       "date": "2026-09-27",
       "start": "15:30",
       "end": "16:30",
@@ -6160,7 +6152,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis1",
+      "court": "Court mnmCah",
       "date": "2026-09-27",
       "start": "14:30",
       "end": "15:30",
@@ -6168,7 +6160,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis7",
+      "court": "Court rvP7cw",
       "date": "2026-09-27",
       "start": "09:00",
       "end": "10:00",
@@ -6176,7 +6168,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis5",
+      "court": "Court uSqQ7x",
       "date": "2026-09-27",
       "start": "09:00",
       "end": "10:00",
@@ -6184,7 +6176,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis5",
+      "court": "Court uSqQ7x",
       "date": "2026-09-27",
       "start": "15:00",
       "end": "16:00",
@@ -6192,7 +6184,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis5",
+      "court": "Court uSqQ7x",
       "date": "2026-09-27",
       "start": "21:00",
       "end": "22:00",
@@ -6200,7 +6192,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis3",
+      "court": "Court Dzivpw",
       "date": "2026-09-28",
       "start": "09:30",
       "end": "10:30",
@@ -6208,7 +6200,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis3",
+      "court": "Court Dzivpw",
       "date": "2026-09-28",
       "start": "13:30",
       "end": "14:30",
@@ -6216,7 +6208,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis3",
+      "court": "Court Dzivpw",
       "date": "2026-09-28",
       "start": "21:30",
       "end": "22:30",
@@ -6224,7 +6216,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-28",
       "start": "07:00",
       "end": "08:00",
@@ -6232,7 +6224,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-28",
       "start": "08:00",
       "end": "09:00",
@@ -6240,7 +6232,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-28",
       "start": "09:00",
       "end": "10:00",
@@ -6248,7 +6240,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-28",
       "start": "10:00",
       "end": "11:00",
@@ -6256,7 +6248,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-28",
       "start": "11:00",
       "end": "12:00",
@@ -6264,7 +6256,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-28",
       "start": "12:00",
       "end": "13:00",
@@ -6272,7 +6264,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-28",
       "start": "13:00",
       "end": "14:00",
@@ -6280,7 +6272,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-28",
       "start": "14:00",
       "end": "15:00",
@@ -6288,7 +6280,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-28",
       "start": "15:00",
       "end": "16:00",
@@ -6296,7 +6288,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-28",
       "start": "16:00",
       "end": "17:00",
@@ -6304,7 +6296,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-28",
       "start": "18:00",
       "end": "19:00",
@@ -6312,7 +6304,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-28",
       "start": "19:00",
       "end": "20:00",
@@ -6320,7 +6312,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-28",
       "start": "20:00",
       "end": "21:00",
@@ -6328,7 +6320,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis6",
+      "court": "Court Nr7QxI",
       "date": "2026-09-28",
       "start": "09:00",
       "end": "10:00",
@@ -6336,7 +6328,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis6",
+      "court": "Court Nr7QxI",
       "date": "2026-09-28",
       "start": "13:00",
       "end": "14:00",
@@ -6344,7 +6336,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis6",
+      "court": "Court Nr7QxI",
       "date": "2026-09-28",
       "start": "14:00",
       "end": "15:00",
@@ -6352,7 +6344,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis2",
+      "court": "Court loqQpj",
       "date": "2026-09-28",
       "start": "15:30",
       "end": "16:30",
@@ -6360,7 +6352,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis1",
+      "court": "Court mnmCah",
       "date": "2026-09-28",
       "start": "14:00",
       "end": "15:00",
@@ -6368,7 +6360,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis1",
+      "court": "Court mnmCah",
       "date": "2026-09-28",
       "start": "14:30",
       "end": "15:30",
@@ -6376,7 +6368,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis1",
+      "court": "Court mnmCah",
       "date": "2026-09-28",
       "start": "21:30",
       "end": "22:30",
@@ -6384,7 +6376,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis7",
+      "court": "Court rvP7cw",
       "date": "2026-09-28",
       "start": "16:00",
       "end": "17:00",
@@ -6392,7 +6384,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis5",
+      "court": "Court uSqQ7x",
       "date": "2026-09-28",
       "start": "09:00",
       "end": "10:00",
@@ -6400,7 +6392,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis5",
+      "court": "Court uSqQ7x",
       "date": "2026-09-28",
       "start": "13:00",
       "end": "14:00",
@@ -6408,7 +6400,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis5",
+      "court": "Court uSqQ7x",
       "date": "2026-09-28",
       "start": "21:00",
       "end": "22:00",
@@ -6416,7 +6408,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis3",
+      "court": "Court Dzivpw",
       "date": "2026-09-29",
       "start": "08:30",
       "end": "09:30",
@@ -6424,7 +6416,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis3",
+      "court": "Court Dzivpw",
       "date": "2026-09-29",
       "start": "11:30",
       "end": "12:30",
@@ -6432,7 +6424,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis3",
+      "court": "Court Dzivpw",
       "date": "2026-09-29",
       "start": "12:00",
       "end": "13:00",
@@ -6440,7 +6432,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis3",
+      "court": "Court Dzivpw",
       "date": "2026-09-29",
       "start": "21:30",
       "end": "22:30",
@@ -6448,7 +6440,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-29",
       "start": "07:00",
       "end": "08:00",
@@ -6456,7 +6448,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-29",
       "start": "08:00",
       "end": "09:00",
@@ -6464,7 +6456,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-29",
       "start": "09:00",
       "end": "10:00",
@@ -6472,7 +6464,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-29",
       "start": "10:00",
       "end": "11:00",
@@ -6480,7 +6472,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-29",
       "start": "11:00",
       "end": "12:00",
@@ -6488,7 +6480,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-29",
       "start": "12:00",
       "end": "13:00",
@@ -6496,7 +6488,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-29",
       "start": "13:00",
       "end": "14:00",
@@ -6504,7 +6496,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-29",
       "start": "14:00",
       "end": "15:00",
@@ -6512,7 +6504,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-29",
       "start": "15:00",
       "end": "16:00",
@@ -6520,7 +6512,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-29",
       "start": "16:00",
       "end": "17:00",
@@ -6528,7 +6520,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-29",
       "start": "17:00",
       "end": "18:00",
@@ -6536,7 +6528,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-29",
       "start": "19:00",
       "end": "20:00",
@@ -6544,7 +6536,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-29",
       "start": "20:00",
       "end": "21:00",
@@ -6552,7 +6544,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis2",
+      "court": "Court loqQpj",
       "date": "2026-09-29",
       "start": "21:30",
       "end": "22:30",
@@ -6560,7 +6552,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis1",
+      "court": "Court mnmCah",
       "date": "2026-09-29",
       "start": "08:30",
       "end": "09:30",
@@ -6568,7 +6560,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis1",
+      "court": "Court mnmCah",
       "date": "2026-09-29",
       "start": "21:30",
       "end": "22:30",
@@ -6576,7 +6568,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis7",
+      "court": "Court rvP7cw",
       "date": "2026-09-29",
       "start": "13:00",
       "end": "14:00",
@@ -6584,7 +6576,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis4",
+      "court": "Court 5Ra03T",
       "date": "2026-09-30",
       "start": "12:00",
       "end": "13:00",
@@ -6592,7 +6584,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis3",
+      "court": "Court Dzivpw",
       "date": "2026-09-30",
       "start": "12:30",
       "end": "13:00",
@@ -6600,7 +6592,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis3",
+      "court": "Court Dzivpw",
       "date": "2026-09-30",
       "start": "21:30",
       "end": "22:30",
@@ -6608,7 +6600,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-30",
       "start": "07:00",
       "end": "08:00",
@@ -6616,7 +6608,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-30",
       "start": "08:00",
       "end": "09:00",
@@ -6624,7 +6616,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-30",
       "start": "09:00",
       "end": "10:00",
@@ -6632,7 +6624,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-30",
       "start": "10:00",
       "end": "11:00",
@@ -6640,7 +6632,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-30",
       "start": "11:00",
       "end": "12:00",
@@ -6648,7 +6640,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-30",
       "start": "12:00",
       "end": "13:00",
@@ -6656,7 +6648,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-30",
       "start": "13:00",
       "end": "14:00",
@@ -6664,7 +6656,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-30",
       "start": "14:00",
       "end": "15:00",
@@ -6672,7 +6664,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-30",
       "start": "15:00",
       "end": "16:00",
@@ -6680,7 +6672,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-30",
       "start": "16:00",
       "end": "17:00",
@@ -6688,7 +6680,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-30",
       "start": "17:00",
       "end": "18:00",
@@ -6696,7 +6688,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-30",
       "start": "18:00",
       "end": "19:00",
@@ -6704,7 +6696,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-30",
       "start": "19:00",
       "end": "20:00",
@@ -6712,7 +6704,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Ulkokenttä1",
+      "court": "Court HmmuJ3",
       "date": "2026-09-30",
       "start": "20:00",
       "end": "21:00",
@@ -6720,7 +6712,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis6",
+      "court": "Court Nr7QxI",
       "date": "2026-09-30",
       "start": "13:00",
       "end": "14:00",
@@ -6728,7 +6720,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis2",
+      "court": "Court loqQpj",
       "date": "2026-09-30",
       "start": "08:30",
       "end": "09:30",
@@ -6736,7 +6728,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis2",
+      "court": "Court loqQpj",
       "date": "2026-09-30",
       "start": "14:30",
       "end": "15:30",
@@ -6744,7 +6736,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis2",
+      "court": "Court loqQpj",
       "date": "2026-09-30",
       "start": "21:30",
       "end": "22:30",
@@ -6752,7 +6744,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis1",
+      "court": "Court mnmCah",
       "date": "2026-09-30",
       "start": "21:30",
       "end": "22:30",
@@ -6760,7 +6752,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis7",
+      "court": "Court rvP7cw",
       "date": "2026-09-30",
       "start": "10:00",
       "end": "11:00",
@@ -6768,7 +6760,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis4",
+      "court": "Court 5Ra03T",
       "date": "2026-10-01",
       "start": "10:00",
       "end": "11:00",
@@ -6776,7 +6768,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis4",
+      "court": "Court 5Ra03T",
       "date": "2026-10-01",
       "start": "10:30",
       "end": "11:30",
@@ -6784,7 +6776,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis4",
+      "court": "Court 5Ra03T",
       "date": "2026-10-01",
       "start": "12:30",
       "end": "13:00",
@@ -6792,7 +6784,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis3",
+      "court": "Court Dzivpw",
       "date": "2026-10-01",
       "start": "08:30",
       "end": "09:30",
@@ -6800,7 +6792,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis3",
+      "court": "Court Dzivpw",
       "date": "2026-10-01",
       "start": "10:30",
       "end": "11:30",
@@ -6808,7 +6800,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis3",
+      "court": "Court Dzivpw",
       "date": "2026-10-01",
       "start": "12:30",
       "end": "13:30",
@@ -6816,7 +6808,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis3",
+      "court": "Court Dzivpw",
       "date": "2026-10-01",
       "start": "13:30",
       "end": "14:30",
@@ -6824,7 +6816,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis3",
+      "court": "Court Dzivpw",
       "date": "2026-10-01",
       "start": "14:30",
       "end": "15:00",
@@ -6832,7 +6824,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis6",
+      "court": "Court Nr7QxI",
       "date": "2026-10-01",
       "start": "09:00",
       "end": "10:00",
@@ -6840,7 +6832,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis1",
+      "court": "Court mnmCah",
       "date": "2026-10-01",
       "start": "09:00",
       "end": "10:00",
@@ -6848,7 +6840,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis1",
+      "court": "Court mnmCah",
       "date": "2026-10-01",
       "start": "09:30",
       "end": "10:30",
@@ -6856,7 +6848,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis1",
+      "court": "Court mnmCah",
       "date": "2026-10-01",
       "start": "12:00",
       "end": "13:00",
@@ -6864,7 +6856,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis7",
+      "court": "Court rvP7cw",
       "date": "2026-10-01",
       "start": "09:00",
       "end": "10:00",
@@ -6872,7 +6864,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis7",
+      "court": "Court rvP7cw",
       "date": "2026-10-01",
       "start": "13:00",
       "end": "14:00",
@@ -6880,7 +6872,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis5",
+      "court": "Court uSqQ7x",
       "date": "2026-10-01",
       "start": "09:00",
       "end": "10:00",
@@ -6888,7 +6880,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis4",
+      "court": "Court 5Ra03T",
       "date": "2026-10-02",
       "start": "12:00",
       "end": "13:00",
@@ -6896,7 +6888,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis4",
+      "court": "Court 5Ra03T",
       "date": "2026-10-02",
       "start": "20:00",
       "end": "21:00",
@@ -6904,7 +6896,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis4",
+      "court": "Court 5Ra03T",
       "date": "2026-10-02",
       "start": "21:00",
       "end": "22:00",
@@ -6912,7 +6904,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis3",
+      "court": "Court Dzivpw",
       "date": "2026-10-02",
       "start": "20:30",
       "end": "21:30",
@@ -6920,7 +6912,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis6",
+      "court": "Court Nr7QxI",
       "date": "2026-10-02",
       "start": "20:00",
       "end": "21:00",
@@ -6928,7 +6920,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis6",
+      "court": "Court Nr7QxI",
       "date": "2026-10-02",
       "start": "21:00",
       "end": "22:00",
@@ -6936,7 +6928,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis2",
+      "court": "Court loqQpj",
       "date": "2026-10-02",
       "start": "09:30",
       "end": "10:30",
@@ -6944,7 +6936,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis1",
+      "court": "Court mnmCah",
       "date": "2026-10-02",
       "start": "20:30",
       "end": "21:30",
@@ -6952,7 +6944,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis7",
+      "court": "Court rvP7cw",
       "date": "2026-10-02",
       "start": "21:00",
       "end": "22:00",
@@ -6960,7 +6952,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis5",
+      "court": "Court uSqQ7x",
       "date": "2026-10-02",
       "start": "21:00",
       "end": "22:00",
@@ -6968,7 +6960,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis4",
+      "court": "Court 5Ra03T",
       "date": "2026-10-03",
       "start": "18:00",
       "end": "19:00",
@@ -6976,7 +6968,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis4",
+      "court": "Court 5Ra03T",
       "date": "2026-10-03",
       "start": "20:00",
       "end": "21:00",
@@ -6984,7 +6976,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis4",
+      "court": "Court 5Ra03T",
       "date": "2026-10-03",
       "start": "21:00",
       "end": "22:00",
@@ -6992,7 +6984,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis3",
+      "court": "Court Dzivpw",
       "date": "2026-10-03",
       "start": "08:30",
       "end": "09:30",
@@ -7000,7 +6992,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis3",
+      "court": "Court Dzivpw",
       "date": "2026-10-03",
       "start": "09:30",
       "end": "10:30",
@@ -7008,7 +7000,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis3",
+      "court": "Court Dzivpw",
       "date": "2026-10-03",
       "start": "17:30",
       "end": "18:30",
@@ -7016,7 +7008,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis3",
+      "court": "Court Dzivpw",
       "date": "2026-10-03",
       "start": "18:30",
       "end": "19:30",
@@ -7024,7 +7016,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis3",
+      "court": "Court Dzivpw",
       "date": "2026-10-03",
       "start": "19:30",
       "end": "20:30",
@@ -7032,7 +7024,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis3",
+      "court": "Court Dzivpw",
       "date": "2026-10-03",
       "start": "20:30",
       "end": "21:30",
@@ -7040,7 +7032,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis6",
+      "court": "Court Nr7QxI",
       "date": "2026-10-03",
       "start": "09:00",
       "end": "10:00",
@@ -7048,7 +7040,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis6",
+      "court": "Court Nr7QxI",
       "date": "2026-10-03",
       "start": "19:00",
       "end": "20:00",
@@ -7056,7 +7048,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis6",
+      "court": "Court Nr7QxI",
       "date": "2026-10-03",
       "start": "20:00",
       "end": "21:00",
@@ -7064,7 +7056,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis6",
+      "court": "Court Nr7QxI",
       "date": "2026-10-03",
       "start": "21:00",
       "end": "22:00",
@@ -7072,7 +7064,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis2",
+      "court": "Court loqQpj",
       "date": "2026-10-03",
       "start": "08:30",
       "end": "09:30",
@@ -7080,7 +7072,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis2",
+      "court": "Court loqQpj",
       "date": "2026-10-03",
       "start": "17:30",
       "end": "18:30",
@@ -7088,7 +7080,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis2",
+      "court": "Court loqQpj",
       "date": "2026-10-03",
       "start": "18:30",
       "end": "19:30",
@@ -7096,7 +7088,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis2",
+      "court": "Court loqQpj",
       "date": "2026-10-03",
       "start": "20:30",
       "end": "21:30",
@@ -7104,7 +7096,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis1",
+      "court": "Court mnmCah",
       "date": "2026-10-03",
       "start": "08:30",
       "end": "09:30",
@@ -7112,7 +7104,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis1",
+      "court": "Court mnmCah",
       "date": "2026-10-03",
       "start": "17:30",
       "end": "18:30",
@@ -7120,7 +7112,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis1",
+      "court": "Court mnmCah",
       "date": "2026-10-03",
       "start": "18:30",
       "end": "19:30",
@@ -7128,7 +7120,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis1",
+      "court": "Court mnmCah",
       "date": "2026-10-03",
       "start": "19:30",
       "end": "20:30",
@@ -7136,7 +7128,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis1",
+      "court": "Court mnmCah",
       "date": "2026-10-03",
       "start": "20:30",
       "end": "21:30",
@@ -7144,7 +7136,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis7",
+      "court": "Court rvP7cw",
       "date": "2026-10-03",
       "start": "19:00",
       "end": "20:00",
@@ -7152,7 +7144,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis7",
+      "court": "Court rvP7cw",
       "date": "2026-10-03",
       "start": "20:00",
       "end": "21:00",
@@ -7160,7 +7152,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis7",
+      "court": "Court rvP7cw",
       "date": "2026-10-03",
       "start": "21:00",
       "end": "22:00",
@@ -7168,7 +7160,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis5",
+      "court": "Court uSqQ7x",
       "date": "2026-10-03",
       "start": "18:00",
       "end": "19:00",
@@ -7176,7 +7168,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis5",
+      "court": "Court uSqQ7x",
       "date": "2026-10-03",
       "start": "19:00",
       "end": "20:00",
@@ -7184,7 +7176,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis5",
+      "court": "Court uSqQ7x",
       "date": "2026-10-03",
       "start": "20:00",
       "end": "21:00",
@@ -7192,7 +7184,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis5",
+      "court": "Court uSqQ7x",
       "date": "2026-10-03",
       "start": "21:00",
       "end": "22:00",
@@ -7200,7 +7192,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis4",
+      "court": "Court 5Ra03T",
       "date": "2026-10-04",
       "start": "09:00",
       "end": "10:00",
@@ -7208,7 +7200,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis4",
+      "court": "Court 5Ra03T",
       "date": "2026-10-04",
       "start": "21:00",
       "end": "22:00",
@@ -7216,7 +7208,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis3",
+      "court": "Court Dzivpw",
       "date": "2026-10-04",
       "start": "08:30",
       "end": "09:30",
@@ -7224,7 +7216,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis3",
+      "court": "Court Dzivpw",
       "date": "2026-10-04",
       "start": "09:30",
       "end": "10:30",
@@ -7232,7 +7224,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis3",
+      "court": "Court Dzivpw",
       "date": "2026-10-04",
       "start": "20:30",
       "end": "21:30",
@@ -7240,7 +7232,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis6",
+      "court": "Court Nr7QxI",
       "date": "2026-10-04",
       "start": "09:00",
       "end": "10:00",
@@ -7248,7 +7240,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis6",
+      "court": "Court Nr7QxI",
       "date": "2026-10-04",
       "start": "21:00",
       "end": "22:00",
@@ -7256,7 +7248,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis2",
+      "court": "Court loqQpj",
       "date": "2026-10-04",
       "start": "08:30",
       "end": "09:30",
@@ -7264,7 +7256,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis1",
+      "court": "Court mnmCah",
       "date": "2026-10-04",
       "start": "08:30",
       "end": "09:30",
@@ -7272,7 +7264,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis1",
+      "court": "Court mnmCah",
       "date": "2026-10-04",
       "start": "10:30",
       "end": "11:30",
@@ -7280,7 +7272,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis7",
+      "court": "Court rvP7cw",
       "date": "2026-10-04",
       "start": "09:00",
       "end": "10:00",
@@ -7288,7 +7280,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis5",
+      "court": "Court uSqQ7x",
       "date": "2026-10-04",
       "start": "09:00",
       "end": "10:00",
@@ -7296,7 +7288,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis5",
+      "court": "Court uSqQ7x",
       "date": "2026-10-04",
       "start": "21:00",
       "end": "22:00",
@@ -7304,7 +7296,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis4",
+      "court": "Court 5Ra03T",
       "date": "2026-10-05",
       "start": "09:00",
       "end": "10:00",
@@ -7312,7 +7304,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis4",
+      "court": "Court 5Ra03T",
       "date": "2026-10-05",
       "start": "14:00",
       "end": "15:00",
@@ -7320,7 +7312,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis4",
+      "court": "Court 5Ra03T",
       "date": "2026-10-05",
       "start": "21:00",
       "end": "22:00",
@@ -7328,7 +7320,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis3",
+      "court": "Court Dzivpw",
       "date": "2026-10-05",
       "start": "12:30",
       "end": "13:30",
@@ -7336,7 +7328,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis3",
+      "court": "Court Dzivpw",
       "date": "2026-10-05",
       "start": "13:30",
       "end": "14:30",
@@ -7344,7 +7336,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis3",
+      "court": "Court Dzivpw",
       "date": "2026-10-05",
       "start": "21:30",
       "end": "22:30",
@@ -7352,7 +7344,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis6",
+      "court": "Court Nr7QxI",
       "date": "2026-10-05",
       "start": "09:00",
       "end": "10:00",
@@ -7360,7 +7352,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis6",
+      "court": "Court Nr7QxI",
       "date": "2026-10-05",
       "start": "13:00",
       "end": "14:00",
@@ -7368,7 +7360,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis6",
+      "court": "Court Nr7QxI",
       "date": "2026-10-05",
       "start": "14:00",
       "end": "15:00",
@@ -7376,7 +7368,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis6",
+      "court": "Court Nr7QxI",
       "date": "2026-10-05",
       "start": "15:00",
       "end": "16:00",
@@ -7384,7 +7376,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis6",
+      "court": "Court Nr7QxI",
       "date": "2026-10-05",
       "start": "21:00",
       "end": "22:00",
@@ -7392,7 +7384,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis2",
+      "court": "Court loqQpj",
       "date": "2026-10-05",
       "start": "08:30",
       "end": "09:30",
@@ -7400,7 +7392,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis2",
+      "court": "Court loqQpj",
       "date": "2026-10-05",
       "start": "14:30",
       "end": "15:30",
@@ -7408,7 +7400,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis1",
+      "court": "Court mnmCah",
       "date": "2026-10-05",
       "start": "21:30",
       "end": "22:30",
@@ -7416,7 +7408,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis7",
+      "court": "Court rvP7cw",
       "date": "2026-10-05",
       "start": "09:00",
       "end": "10:00",
@@ -7424,7 +7416,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis7",
+      "court": "Court rvP7cw",
       "date": "2026-10-05",
       "start": "13:00",
       "end": "14:00",
@@ -7432,7 +7424,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis5",
+      "court": "Court uSqQ7x",
       "date": "2026-10-05",
       "start": "09:00",
       "end": "10:00",
@@ -7440,7 +7432,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis5",
+      "court": "Court uSqQ7x",
       "date": "2026-10-05",
       "start": "12:00",
       "end": "13:00",
@@ -7448,7 +7440,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis5",
+      "court": "Court uSqQ7x",
       "date": "2026-10-05",
       "start": "13:00",
       "end": "14:00",
@@ -7456,7 +7448,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis5",
+      "court": "Court uSqQ7x",
       "date": "2026-10-05",
       "start": "14:00",
       "end": "15:00",
@@ -7464,7 +7456,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis5",
+      "court": "Court uSqQ7x",
       "date": "2026-10-05",
       "start": "21:00",
       "end": "22:00",
@@ -7472,7 +7464,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis4",
+      "court": "Court 5Ra03T",
       "date": "2026-10-06",
       "start": "12:00",
       "end": "13:00",
@@ -7480,7 +7472,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis4",
+      "court": "Court 5Ra03T",
       "date": "2026-10-06",
       "start": "13:00",
       "end": "14:00",
@@ -7488,7 +7480,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis4",
+      "court": "Court 5Ra03T",
       "date": "2026-10-06",
       "start": "14:00",
       "end": "15:00",
@@ -7496,7 +7488,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis3",
+      "court": "Court Dzivpw",
       "date": "2026-10-06",
       "start": "10:30",
       "end": "11:30",
@@ -7504,7 +7496,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis3",
+      "court": "Court Dzivpw",
       "date": "2026-10-06",
       "start": "21:30",
       "end": "22:30",
@@ -7512,7 +7504,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis6",
+      "court": "Court Nr7QxI",
       "date": "2026-10-06",
       "start": "09:00",
       "end": "10:00",
@@ -7520,7 +7512,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis6",
+      "court": "Court Nr7QxI",
       "date": "2026-10-06",
       "start": "11:00",
       "end": "12:00",
@@ -7528,7 +7520,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis2",
+      "court": "Court loqQpj",
       "date": "2026-10-06",
       "start": "21:30",
       "end": "22:30",
@@ -7536,7 +7528,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis1",
+      "court": "Court mnmCah",
       "date": "2026-10-06",
       "start": "12:30",
       "end": "13:30",
@@ -7544,7 +7536,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis1",
+      "court": "Court mnmCah",
       "date": "2026-10-06",
       "start": "21:30",
       "end": "22:30",
@@ -7552,7 +7544,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis7",
+      "court": "Court rvP7cw",
       "date": "2026-10-06",
       "start": "10:00",
       "end": "11:00",
@@ -7560,7 +7552,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis7",
+      "court": "Court rvP7cw",
       "date": "2026-10-06",
       "start": "12:00",
       "end": "13:00",
@@ -7568,7 +7560,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis7",
+      "court": "Court rvP7cw",
       "date": "2026-10-06",
       "start": "13:00",
       "end": "14:00",
@@ -7576,7 +7568,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis7",
+      "court": "Court rvP7cw",
       "date": "2026-10-06",
       "start": "21:00",
       "end": "22:00",
@@ -7584,7 +7576,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis5",
+      "court": "Court uSqQ7x",
       "date": "2026-10-06",
       "start": "08:00",
       "end": "09:00",
@@ -7592,7 +7584,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis5",
+      "court": "Court uSqQ7x",
       "date": "2026-10-06",
       "start": "09:00",
       "end": "10:00",
@@ -7600,7 +7592,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis5",
+      "court": "Court uSqQ7x",
       "date": "2026-10-06",
       "start": "10:00",
       "end": "11:00",
@@ -7608,7 +7600,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis5",
+      "court": "Court uSqQ7x",
       "date": "2026-10-06",
       "start": "12:00",
       "end": "13:00",
@@ -7616,7 +7608,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis5",
+      "court": "Court uSqQ7x",
       "date": "2026-10-06",
       "start": "13:00",
       "end": "14:00",
@@ -7624,7 +7616,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis4",
+      "court": "Court 5Ra03T",
       "date": "2026-10-07",
       "start": "09:00",
       "end": "10:00",
@@ -7632,7 +7624,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis4",
+      "court": "Court 5Ra03T",
       "date": "2026-10-07",
       "start": "12:00",
       "end": "13:00",
@@ -7640,7 +7632,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis3",
+      "court": "Court Dzivpw",
       "date": "2026-10-07",
       "start": "12:30",
       "end": "13:00",
@@ -7648,7 +7640,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis3",
+      "court": "Court Dzivpw",
       "date": "2026-10-07",
       "start": "21:30",
       "end": "22:30",
@@ -7656,7 +7648,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis6",
+      "court": "Court Nr7QxI",
       "date": "2026-10-07",
       "start": "07:00",
       "end": "08:00",
@@ -7664,7 +7656,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis6",
+      "court": "Court Nr7QxI",
       "date": "2026-10-07",
       "start": "09:00",
       "end": "10:00",
@@ -7672,7 +7664,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis6",
+      "court": "Court Nr7QxI",
       "date": "2026-10-07",
       "start": "13:00",
       "end": "14:00",
@@ -7680,7 +7672,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis2",
+      "court": "Court loqQpj",
       "date": "2026-10-07",
       "start": "08:30",
       "end": "09:30",
@@ -7688,7 +7680,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis2",
+      "court": "Court loqQpj",
       "date": "2026-10-07",
       "start": "13:30",
       "end": "14:30",
@@ -7696,7 +7688,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis2",
+      "court": "Court loqQpj",
       "date": "2026-10-07",
       "start": "21:30",
       "end": "22:30",
@@ -7704,7 +7696,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis1",
+      "court": "Court mnmCah",
       "date": "2026-10-07",
       "start": "14:30",
       "end": "15:30",
@@ -7712,7 +7704,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis1",
+      "court": "Court mnmCah",
       "date": "2026-10-07",
       "start": "21:30",
       "end": "22:30",
@@ -7720,7 +7712,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis7",
+      "court": "Court rvP7cw",
       "date": "2026-10-07",
       "start": "12:00",
       "end": "13:00",
@@ -7728,7 +7720,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis7",
+      "court": "Court rvP7cw",
       "date": "2026-10-07",
       "start": "13:00",
       "end": "14:00",
@@ -7736,7 +7728,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis7",
+      "court": "Court rvP7cw",
       "date": "2026-10-07",
       "start": "14:00",
       "end": "15:00",
@@ -7744,7 +7736,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis4",
+      "court": "Court 5Ra03T",
       "date": "2026-10-08",
       "start": "09:00",
       "end": "10:00",
@@ -7752,7 +7744,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis4",
+      "court": "Court 5Ra03T",
       "date": "2026-10-08",
       "start": "10:00",
       "end": "11:00",
@@ -7760,7 +7752,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis4",
+      "court": "Court 5Ra03T",
       "date": "2026-10-08",
       "start": "11:00",
       "end": "11:30",
@@ -7768,7 +7760,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis4",
+      "court": "Court 5Ra03T",
       "date": "2026-10-08",
       "start": "13:30",
       "end": "14:00",
@@ -7776,7 +7768,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis3",
+      "court": "Court Dzivpw",
       "date": "2026-10-08",
       "start": "08:30",
       "end": "09:30",
@@ -7784,7 +7776,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis3",
+      "court": "Court Dzivpw",
       "date": "2026-10-08",
       "start": "13:30",
       "end": "14:30",
@@ -7792,7 +7784,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis3",
+      "court": "Court Dzivpw",
       "date": "2026-10-08",
       "start": "14:00",
       "end": "15:00",
@@ -7800,7 +7792,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis3",
+      "court": "Court Dzivpw",
       "date": "2026-10-08",
       "start": "21:30",
       "end": "22:30",
@@ -7808,7 +7800,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis6",
+      "court": "Court Nr7QxI",
       "date": "2026-10-08",
       "start": "09:00",
       "end": "10:00",
@@ -7816,7 +7808,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis2",
+      "court": "Court loqQpj",
       "date": "2026-10-08",
       "start": "21:30",
       "end": "22:30",
@@ -7824,7 +7816,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis1",
+      "court": "Court mnmCah",
       "date": "2026-10-08",
       "start": "21:30",
       "end": "22:30",
@@ -7832,7 +7824,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis7",
+      "court": "Court rvP7cw",
       "date": "2026-10-08",
       "start": "09:00",
       "end": "10:00",
@@ -7840,7 +7832,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis7",
+      "court": "Court rvP7cw",
       "date": "2026-10-08",
       "start": "10:00",
       "end": "11:00",
@@ -7848,7 +7840,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis7",
+      "court": "Court rvP7cw",
       "date": "2026-10-08",
       "start": "13:00",
       "end": "14:00",
@@ -7856,7 +7848,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis5",
+      "court": "Court uSqQ7x",
       "date": "2026-10-08",
       "start": "09:00",
       "end": "10:00",
@@ -16780,14 +16772,6 @@
       "date": "2026-09-26",
       "start": "07:30",
       "end": "08:30",
-      "available": true,
-      "venue": "Talin Tenniskeskus"
-    },
-    {
-      "court": "K-9",
-      "date": "2026-09-26",
-      "start": "08:30",
-      "end": "09:30",
       "available": true,
       "venue": "Talin Tenniskeskus"
     },
