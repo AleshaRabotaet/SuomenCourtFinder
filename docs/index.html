@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tennis Court Finder — Espoo &amp; Helsinki</title>
 <meta name="description" content="Free tennis court slots at private halls in Espoo and Helsinki, updated every 30 minutes.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%8E%BE</text></svg>">
 <style>
   :root {
     --bg: #f6f7f9;
@@ -65,12 +66,19 @@
     margin: 0 auto;
     padding: 12px 12px 40px;
   }
+  .dates-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
   .dates {
     display: flex;
     gap: 8px;
     overflow-x: auto;
     padding: 12px 0;
     -webkit-overflow-scrolling: touch;
+    flex: 1 1 auto;
+    min-width: 0;
   }
   .date-btn {
     flex: 0 0 auto;
@@ -89,6 +97,15 @@
     color: var(--accent-contrast);
     font-weight: 600;
   }
+  .date-input {
+    flex: 0 0 auto;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 7px 12px;
+    background: var(--card-bg);
+    color: var(--text);
+    font-size: 0.85rem;
+  }
   .filters {
     display: flex;
     flex-wrap: wrap;
@@ -103,7 +120,7 @@
     gap: 6px;
     color: var(--muted);
   }
-  .filters input[type="time"] {
+  .filters select {
     border: 1px solid var(--border);
     border-radius: 6px;
     padding: 4px 6px;
@@ -145,14 +162,6 @@
     color: var(--muted);
     font-size: 0.8rem;
     margin-bottom: 10px;
-  }
-  .court-group {
-    margin-bottom: 8px;
-  }
-  .court-name {
-    font-size: 0.82rem;
-    color: var(--muted);
-    margin-bottom: 6px;
   }
   .slots {
     display: flex;
@@ -202,10 +211,13 @@
   <div class="subtitle" id="subtitle">Loading…</div>
 </header>
 <main>
-  <div class="dates" id="dates"></div>
+  <div class="dates-row">
+    <div class="dates" id="dates"></div>
+    <input type="date" class="date-input" id="dateInput">
+  </div>
   <div class="filters">
-    <label>From <input type="time" id="fromTime"></label>
-    <label>To <input type="time" id="toTime"></label>
+    <label>From <select id="fromTime"></select></label>
+    <label>To <select id="toTime"></select></label>
   </div>
   <div class="venue-toggles" id="venueToggles"></div>
   <div id="warnings"></div>
@@ -225,6 +237,41 @@
     toTime: "",
     hiddenVenues: new Set(),
   };
+
+  function minutesToTime(total) {
+    const h = Math.floor(total / 60);
+    const m = total % 60;
+    return `${String(h).padStart(2, "0")}:${String(m).padStart(2, "0")}`;
+  }
+
+  function buildTimeOptions(selectEl) {
+    selectEl.innerHTML = '<option value="">Any</option>';
+    for (let total = 0; total < 24 * 60; total += 30) {
+      const value = minutesToTime(total);
+      const opt = document.createElement("option");
+      opt.value = value;
+      opt.textContent = value;
+      selectEl.appendChild(opt);
+    }
+  }
+
+  function currentHelsinkiTime() {
+    const parts = new Intl.DateTimeFormat("en-GB", {
+      timeZone: "Europe/Helsinki",
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: false,
+    }).formatToParts(new Date());
+    const h = parts.find((p) => p.type === "hour").value;
+    const m = parts.find((p) => p.type === "minute").value;
+    return `${h}:${m}`;
+  }
+
+  function roundUpToStep(hhmm, stepMinutes) {
+    const total = timeToMinutes(hhmm);
+    const rounded = Math.min(Math.ceil(total / stepMinutes) * stepMinutes, 23 * 60 + 30);
+    return minutesToTime(rounded);
+  }
 
   function fmtDateLabel(iso) {
     const d = new Date(iso + "T00:00:00");
@@ -255,6 +302,13 @@
       };
       el.appendChild(btn);
     });
+
+    const dateInput = document.getElementById("dateInput");
+    if (dates.length) {
+      dateInput.min = dates[0];
+      dateInput.max = dates[dates.length - 1];
+    }
+    dateInput.value = state.selectedDate || "";
   }
 
   function renderVenueToggles() {
@@ -320,18 +374,14 @@
           html += '<div class="empty">No free slots for this date/time.</div>';
         } else {
           anyShown = true;
-          const byCourt = {};
-          slots.forEach((s) => {
-            (byCourt[s.court] = byCourt[s.court] || []).push(s);
+          const sorted = [...slots].sort(
+            (a, b) => a.start.localeCompare(b.start) || a.court.localeCompare(b.court)
+          );
+          html += '<div class="slots">';
+          sorted.forEach((s) => {
+            html += `<a class="slot" href="${venue.booking_url}" target="_blank" rel="noopener">${s.start}–${s.end} · ${s.court}</a>`;
           });
-          Object.keys(byCourt).sort().forEach((court) => {
-            const courtSlots = byCourt[court].sort((a, b) => a.start.localeCompare(b.start));
-            html += `<div class="court-group"><div class="court-name">${court}</div><div class="slots">`;
-            courtSlots.forEach((s) => {
-              html += `<a class="slot" href="${venue.booking_url}" target="_blank" rel="noopener">${s.start}–${s.end}</a>`;
-            });
-            html += "</div></div>";
-          });
+          html += "</div>";
         }
 
         card.innerHTML = html;
@@ -361,10 +411,17 @@
       `Espoo & Helsinki, private halls · updated ${label} (Helsinki time)`;
   }
 
+  const fromTimeEl = document.getElementById("fromTime");
+  const toTimeEl = document.getElementById("toTime");
+  buildTimeOptions(fromTimeEl);
+  buildTimeOptions(toTimeEl);
+
   fetch("./data/availability.json", { cache: "no-store" })
     .then((r) => r.json())
     .then((data) => {
       state.data = data;
+      state.fromTime = roundUpToStep(currentHelsinkiTime(), 30);
+      fromTimeEl.value = state.fromTime;
       renderSubtitle();
       render();
     })
@@ -375,12 +432,17 @@
       console.error(err);
     });
 
-  document.getElementById("fromTime").addEventListener("change", (e) => {
+  fromTimeEl.addEventListener("change", (e) => {
     state.fromTime = e.target.value;
     render();
   });
-  document.getElementById("toTime").addEventListener("change", (e) => {
+  toTimeEl.addEventListener("change", (e) => {
     state.toTime = e.target.value;
+    render();
+  });
+  document.getElementById("dateInput").addEventListener("change", (e) => {
+    if (!e.target.value) return;
+    state.selectedDate = e.target.value;
     render();
   });
 })();
