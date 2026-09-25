@@ -16,9 +16,16 @@ the raw court id if it never comes back - one flaky lookup shouldn't cost us
 the whole venue.
 
 Multiple Finnish tennis clubs run on this same shared backend (confirmed:
-Tapiolan Tennispuisto and Martinmäen Tenniskeskus / Cherry Arena / Aktia
-tennishall), so this one fetcher covers all of them - just pass a different
-`cintoia_customerid` per venue.
+Tapiolan Tennispuisto, Martinmäen Tenniskeskus / Cherry Arena / Aktia
+tennishall, Rosegarden, and Talin/Taivallahden Tenniskeskus), so this one
+fetcher covers all of them - just pass a different `cintoia_customerid` per
+venue.
+
+Some backends host more than one physical venue (e.g. Tali and Taivallahti
+share one Cintoia customer) or mix in non-tennis resources (e.g. Rosegarden
+also has padel courts and ball machines). `getResources` tags every court
+with a `category`, so a venue can pass `cintoia_categories` - a list of the
+category values it should claim - to pull in only its own subset.
 """
 from __future__ import annotations
 
@@ -62,9 +69,15 @@ def _hhmm(raw: str) -> str:
 
 
 def fetch(venue: dict) -> list[dict]:
-    """venue needs: cintoia_customerid, cintoia_origin, days_ahead."""
+    """venue needs: cintoia_customerid, cintoia_origin, days_ahead.
+
+    Optional: cintoia_categories - only include courts whose `category`
+    (from getResources) is in this list. Omit to include every court on
+    the backend, as before.
+    """
     session = requests.Session()
     customerid = venue["cintoia_customerid"]
+    categories = venue.get("cintoia_categories")
 
     resources = _get_resources(session, customerid, venue["cintoia_origin"])
     free_index = _free_index(session, customerid)
@@ -84,7 +97,10 @@ def fetch(venue: dict) -> list[dict]:
         date_iso = f"{date_key[0:4]}-{date_key[4:6]}-{date_key[6:8]}"
 
         for court_id, blocks in day_data.items():
-            court_name = (resources.get(court_id) or {}).get("displayName") or f"Court {court_id[:6]}"
+            resource = resources.get(court_id) or {}
+            if categories is not None and resource.get("category") not in categories:
+                continue
+            court_name = resource.get("displayName") or f"Court {court_id[:6]}"
             for block in blocks:
                 slots.append(
                     {
