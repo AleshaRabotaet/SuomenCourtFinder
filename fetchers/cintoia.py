@@ -11,9 +11,10 @@ two plain, unauthenticated endpoints we can hit directly:
 
 Court display names come from a callable Cloud Function (`ui-get`,
 q=getResources). That endpoint is flaky (empirically returns `{}` on some
-calls for no discernible reason), so we retry a few times and fall back to
-the raw court id if it never comes back - one flaky lookup shouldn't cost us
-the whole venue.
+calls for no discernible reason), so we retry a few times. If it still comes
+back empty, fetch() raises rather than silently falling back to raw court
+ids for every court - the caller (run_all.py) isolates that as a per-venue
+error for this run, and the next 30-minute cron run retries from scratch.
 
 Multiple Finnish tennis clubs run on this same shared backend (confirmed:
 Tapiolan Tennispuisto, Martinmäen Tenniskeskus / Cherry Arena / Aktia
@@ -40,7 +41,7 @@ FUNCTIONS_BASE = "https://europe-west1-falcon-328a1.cloudfunctions.net"
 
 
 def _get_resources(session: requests.Session, customerid: str, origin: str) -> dict:
-    for attempt in range(4):
+    for attempt in range(6):
         try:
             resp = session.post(
                 f"{FUNCTIONS_BASE}/ui-get",
@@ -80,6 +81,8 @@ def fetch(venue: dict) -> list[dict]:
     categories = venue.get("cintoia_categories")
 
     resources = _get_resources(session, customerid, venue["cintoia_origin"])
+    if not resources:
+        raise RuntimeError(f"getResources returned no data for customerid={customerid!r}")
     free_index = _free_index(session, customerid)
 
     wanted_dates = {d.strftime("%Y%m%d") for d in date_range(today_helsinki(), venue.get("days_ahead", 7))}
