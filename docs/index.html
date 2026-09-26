@@ -270,6 +270,9 @@
   .kofi-btn:active {
     opacity: 0.7;
   }
+  .kofi-btn[hidden] {
+    display: none;
+  }
 
   @media (max-width: 480px) {
     header {
@@ -313,7 +316,7 @@
 <header>
   <div class="header-top">
     <h1>🎾 Tennis Court Finder</h1>
-    <a class="kofi-btn" href="https://ko-fi.com/alesharabotaet" target="_blank" rel="noopener">☕ Support</a>
+    <a class="kofi-btn" id="kofiBtn" href="https://ko-fi.com/alesharabotaet" target="_blank" rel="noopener" hidden>☕ Support</a>
   </div>
   <div class="subtitle" id="subtitle">Loading…</div>
 </header>
@@ -643,6 +646,17 @@
       document.getElementById("results").innerHTML =
         '<div class="warning">Could not load data/availability.json. Try refreshing in a bit.</div>';
       console.error(err);
+    });
+
+  // Fail open: a missing/broken config.json keeps the button visible, since
+  // that's the button's default behavior absent an explicit opt-out.
+  fetch("./data/config.json", { cache: "no-store" })
+    .then((r) => (r.ok ? r.json() : {}))
+    .then((config) => {
+      document.getElementById("kofiBtn").hidden = config.showSupportButton === false;
+    })
+    .catch(() => {
+      document.getElementById("kofiBtn").hidden = false;
     });
 
   fromTimeEl.addEventListener("change", (e) => {
