@@ -34,10 +34,18 @@ import time
 
 import requests
 
-from .common import date_range, today_helsinki
+from .common import MAX_DAYS_AHEAD, date_range, polite_sleep, today_helsinki
 
 FIREBASE_BASE = "https://falcon-328a1.firebaseio.com"
 FUNCTIONS_BASE = "https://europe-west1-falcon-328a1.cloudfunctions.net"
+
+# Scoped to one process (one run_all.py invocation / one cron run). Some
+# venues share a single Cintoia backend (e.g. Tali + Taivallahti both use
+# customerid "tali-..."), so caching by customerid/url here avoids hitting
+# that backend twice in the same run.
+_resources_cache: dict[str, dict] = {}
+_free_index_cache: dict[str, dict] = {}
+_day_cache: dict[str, dict] = {}
 
 
 def _get_resources(session: requests.Session, customerid: str, origin: str) -> dict:
@@ -70,7 +78,7 @@ def _hhmm(raw: str) -> str:
 
 
 def fetch(venue: dict) -> list[dict]:
-    """venue needs: cintoia_customerid, cintoia_origin, days_ahead.
+    """venue needs: cintoia_customerid, cintoia_origin.
 
     Optional: cintoia_categories - only include courts whose `category`
     (from getResources) is in this list. Omit to include every court on
@@ -80,23 +88,35 @@ def fetch(venue: dict) -> list[dict]:
     customerid = venue["cintoia_customerid"]
     categories = venue.get("cintoia_categories")
 
-    resources = _get_resources(session, customerid, venue["cintoia_origin"])
-    if not resources:
-        raise RuntimeError(f"getResources returned no data for customerid={customerid!r}")
-    free_index = _free_index(session, customerid)
+    if customerid not in _resources_cache:
+        resources = _get_resources(session, customerid, venue["cintoia_origin"])
+        if not resources:
+            raise RuntimeError(f"getResources returned no data for customerid={customerid!r}")
+        _resources_cache[customerid] = resources
+    resources = _resources_cache[customerid]
 
-    wanted_dates = {d.strftime("%Y%m%d") for d in date_range(today_helsinki(), venue.get("days_ahead", 7))}
+    if customerid not in _free_index_cache:
+        _free_index_cache[customerid] = _free_index(session, customerid)
+    free_index = _free_index_cache[customerid]
+
+    wanted_dates = {d.strftime("%Y%m%d") for d in date_range(today_helsinki(), MAX_DAYS_AHEAD)}
 
     slots: list[dict] = []
+    fetched_any = False
     for date_key, entry in free_index.items():
         if date_key not in wanted_dates:
             continue
         url = entry.get("key")
         if not url:
             continue
-        resp = session.get(url, timeout=20)
-        resp.raise_for_status()
-        day_data = resp.json() or {}
+        if url not in _day_cache:
+            if fetched_any:
+                polite_sleep()
+            fetched_any = True
+            resp = session.get(url, timeout=20)
+            resp.raise_for_status()
+            _day_cache[url] = resp.json() or {}
+        day_data = _day_cache[url]
         date_iso = f"{date_key[0:4]}-{date_key[4:6]}-{date_key[6:8]}"
 
         for court_id, blocks in day_data.items():

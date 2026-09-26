@@ -83,12 +83,6 @@
     padding-left: calc(12px + env(safe-area-inset-left, 0px));
     padding-right: calc(12px + env(safe-area-inset-right, 0px));
   }
-  .dates-row {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 14px;
-  }
   .dates {
     display: flex;
     gap: 8px;
@@ -97,6 +91,7 @@
     -webkit-overflow-scrolling: touch;
     flex: 1 1 auto;
     min-width: 0;
+    margin-bottom: 14px;
   }
   .date-btn {
     flex: 0 0 auto;
@@ -120,17 +115,6 @@
   }
   .date-btn:active {
     opacity: 0.7;
-  }
-  .date-input {
-    flex: 0 0 auto;
-    max-width: 100%;
-    border: 1px solid var(--border);
-    border-radius: 999px;
-    min-height: 44px;
-    padding: 10px 14px;
-    background: var(--card-bg);
-    color: var(--text);
-    font-size: 16px;
   }
   .filters {
     display: flex;
@@ -302,11 +286,6 @@
       padding-left: calc(10px + env(safe-area-inset-left, 0px));
       padding-right: calc(10px + env(safe-area-inset-right, 0px));
     }
-    .dates-row {
-      flex-direction: column;
-      align-items: stretch;
-    }
-    .date-input { width: 100%; }
     .filters {
       font-size: 0.8rem;
     }
@@ -324,10 +303,7 @@
   <div class="subtitle" id="subtitle">Loading…</div>
 </header>
 <main>
-  <div class="dates-row">
-    <div class="dates" id="dates"></div>
-    <input type="date" class="date-input" id="dateInput">
-  </div>
+  <div class="dates" id="dates"></div>
   <div class="filters">
     <label>
       <svg class="filter-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 16 14"></polyline></svg>
@@ -491,13 +467,6 @@
       };
       el.appendChild(btn);
     });
-
-    const dateInput = document.getElementById("dateInput");
-    if (dates.length) {
-      dateInput.min = dates[0];
-      dateInput.max = dates[dates.length - 1];
-    }
-    dateInput.value = state.selectedDate || "";
   }
 
   function renderVenueToggles() {
@@ -676,11 +645,6 @@
   courtTypeEl.addEventListener("change", (e) => {
     state.courtType = e.target.value;
     savePrefs();
-    render();
-  });
-  document.getElementById("dateInput").addEventListener("change", (e) => {
-    if (!e.target.value) return;
-    state.selectedDate = e.target.value;
     render();
   });
 })();

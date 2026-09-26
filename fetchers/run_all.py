@@ -16,6 +16,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from fetchers import cintoia, playfi
+from fetchers.common import HELSINKI, polite_sleep
 from fetchers.venues import VENUES
 
 FETCHERS = {
@@ -27,10 +28,17 @@ OUTPUT_PATH = Path(__file__).resolve().parent.parent / "docs" / "data" / "availa
 
 
 def main() -> None:
+    hour = dt.datetime.now(HELSINKI).hour
+    if hour < 6:  # 00:00-05:59 Helsinki: stay quiet, no requests to any backend
+        print(f"[skip] outside active hours (Helsinki hour={hour}); no requests made")
+        return
+
     venues_out = []
     all_slots = []
 
-    for venue in VENUES:
+    for i, venue in enumerate(VENUES):
+        if i > 0:
+            polite_sleep()
         fetch = FETCHERS[venue["fetcher"]]
         entry = {
             "name": venue["name"],

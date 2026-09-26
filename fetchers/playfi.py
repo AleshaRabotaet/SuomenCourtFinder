@@ -13,7 +13,7 @@ from urllib.parse import unquote_plus
 
 import requests
 
-from .common import date_range, today_helsinki
+from .common import MAX_DAYS_AHEAD, date_range, polite_sleep, today_helsinki
 
 BASE_URL = "https://play.fi"
 
@@ -52,12 +52,14 @@ def _fetch_day(session: requests.Session, venue_slug: str, location_id: str, spo
 
 
 def fetch(venue: dict) -> list[dict]:
-    """venue needs: playfi_slug, playfi_location, playfi_sport, days_ahead."""
+    """venue needs: playfi_slug, playfi_location, playfi_sport."""
     session = requests.Session()
     session.headers["User-Agent"] = "Mozilla/5.0 (compatible; SuomenCourtFinder/1.0)"
 
     slots: list[dict] = []
-    for date in date_range(today_helsinki(), venue.get("days_ahead", 7)):
+    for i, date in enumerate(date_range(today_helsinki(), MAX_DAYS_AHEAD)):
+        if i > 0:
+            polite_sleep()
         slots.extend(
             _fetch_day(
                 session,

@@ -11,9 +11,14 @@ writes the combined result to data/availability.json.
 from __future__ import annotations
 
 import datetime as dt
+import random
+import time
 from zoneinfo import ZoneInfo
 
 HELSINKI = ZoneInfo("Europe/Helsinki")
+
+# Availability isn't shown beyond this many days out (see fetchers/venues.py).
+MAX_DAYS_AHEAD = 10
 
 
 def today_helsinki() -> dt.date:
@@ -22,3 +27,8 @@ def today_helsinki() -> dt.date:
 
 def date_range(start: dt.date, days: int) -> list[dt.date]:
     return [start + dt.timedelta(days=i) for i in range(days)]
+
+
+def polite_sleep(base: float = 1.0, jitter: float = 0.5) -> None:
+    """Jittered delay between outbound requests to a booking backend."""
+    time.sleep(base + random.uniform(-jitter, jitter))
