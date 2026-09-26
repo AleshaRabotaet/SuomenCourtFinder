@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T11:43:28+00:00",
+  "generated_at": "2026-09-26T15:56:10+00:00",
   "venues": [
     {
       "name": "Smash-Espoo (Olarin Tennishalli)",
@@ -9,7 +9,7 @@
       "date_query_param": "BookingCalForm[p_pvm]",
       "status": "ok",
       "error": null,
-      "slot_count": 475
+      "slot_count": 466
     },
     {
       "name": "Tapiolan Tennispuisto",
@@ -19,7 +19,7 @@
       "date_query_param": "day",
       "status": "ok",
       "error": null,
-      "slot_count": 204
+      "slot_count": 199
     },
     {
       "name": "Martinmäen Tenniskeskus (Cherry Arena / Aktia Tennishall)",
@@ -29,7 +29,7 @@
       "date_query_param": "day",
       "status": "ok",
       "error": null,
-      "slot_count": 568
+      "slot_count": 567
     },
     {
       "name": "Talin Tenniskeskus",
@@ -39,7 +39,7 @@
       "date_query_param": "day",
       "status": "ok",
       "error": null,
-      "slot_count": 2717
+      "slot_count": 2688
     },
     {
       "name": "Taivallahden Tenniskeskus",
@@ -49,7 +49,7 @@
       "date_query_param": "day",
       "status": "ok",
       "error": null,
-      "slot_count": 257
+      "slot_count": 245
     },
     {
       "name": "Rosegarden",
@@ -59,43 +59,11 @@
       "date_query_param": "day",
       "status": "ok",
       "error": null,
-      "slot_count": 1106
+      "slot_count": 1074
     }
   ],
   "slots": [
     {
-      "court": "Pallotykki",
-      "date": "2026-09-26",
-      "start": "14:30",
-      "end": "15:30",
-      "available": true,
-      "venue": "Smash-Espoo (Olarin Tennishalli)"
-    },
-    {
-      "court": "Pallotykki",
-      "date": "2026-09-26",
-      "start": "16:30",
-      "end": "17:30",
-      "available": true,
-      "venue": "Smash-Espoo (Olarin Tennishalli)"
-    },
-    {
-      "court": "Pallotykki",
-      "date": "2026-09-26",
-      "start": "17:30",
-      "end": "18:30",
-      "available": true,
-      "venue": "Smash-Espoo (Olarin Tennishalli)"
-    },
-    {
-      "court": "Pallotykki",
-      "date": "2026-09-26",
-      "start": "18:00",
-      "end": "19:00",
-      "available": true,
-      "venue": "Smash-Espoo (Olarin Tennishalli)"
-    },
-    {
       "court": "Te2",
       "date": "2026-09-26",
       "start": "18:30",
@@ -120,34 +88,10 @@
       "venue": "Smash-Espoo (Olarin Tennishalli)"
     },
     {
-      "court": "Pallotykki",
-      "date": "2026-09-26",
-      "start": "19:00",
-      "end": "20:00",
-      "available": true,
-      "venue": "Smash-Espoo (Olarin Tennishalli)"
-    },
-    {
       "court": "Te3",
       "date": "2026-09-26",
       "start": "20:00",
       "end": "21:00",
-      "available": true,
-      "venue": "Smash-Espoo (Olarin Tennishalli)"
-    },
-    {
-      "court": "Te3",
-      "date": "2026-09-26",
-      "start": "20:30",
-      "end": "21:30",
-      "available": true,
-      "venue": "Smash-Espoo (Olarin Tennishalli)"
-    },
-    {
-      "court": "Te3",
-      "date": "2026-09-26",
-      "start": "21:00",
-      "end": "22:00",
       "available": true,
       "venue": "Smash-Espoo (Olarin Tennishalli)"
     },
@@ -161,14 +105,6 @@
     },
     {
       "court": "Te2",
-      "date": "2026-09-26",
-      "start": "21:30",
-      "end": "22:30",
-      "available": true,
-      "venue": "Smash-Espoo (Olarin Tennishalli)"
-    },
-    {
-      "court": "Te3",
       "date": "2026-09-26",
       "start": "21:30",
       "end": "22:30",
@@ -1729,14 +1665,6 @@
     },
     {
       "court": "Te2",
-      "date": "2026-09-30",
-      "start": "22:00",
-      "end": "23:00",
-      "available": true,
-      "venue": "Smash-Espoo (Olarin Tennishalli)"
-    },
-    {
-      "court": "Te3",
       "date": "2026-09-30",
       "start": "22:00",
       "end": "23:00",
@@ -3906,14 +3834,6 @@
     {
       "court": "Sisätennis6",
       "date": "2026-09-26",
-      "start": "18:00",
-      "end": "19:00",
-      "available": true,
-      "venue": "Tapiolan Tennispuisto"
-    },
-    {
-      "court": "Sisätennis6",
-      "date": "2026-09-26",
       "start": "19:00",
       "end": "20:00",
       "available": true,
@@ -3968,14 +3888,6 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis1",
-      "date": "2026-09-26",
-      "start": "20:30",
-      "end": "21:30",
-      "available": true,
-      "venue": "Tapiolan Tennispuisto"
-    },
-    {
       "court": "Sisätennis7",
       "date": "2026-09-26",
       "start": "18:00",
@@ -4034,14 +3946,6 @@
     {
       "court": "Sisätennis4",
       "date": "2026-09-27",
-      "start": "10:00",
-      "end": "11:00",
-      "available": true,
-      "venue": "Tapiolan Tennispuisto"
-    },
-    {
-      "court": "Sisätennis4",
-      "date": "2026-09-27",
       "start": "21:00",
       "end": "22:00",
       "available": true,
@@ -4052,6 +3956,14 @@
       "date": "2026-09-27",
       "start": "11:30",
       "end": "12:30",
+      "available": true,
+      "venue": "Tapiolan Tennispuisto"
+    },
+    {
+      "court": "Sisätennis3",
+      "date": "2026-09-27",
+      "start": "16:30",
+      "end": "17:30",
       "available": true,
       "venue": "Tapiolan Tennispuisto"
     },
@@ -4160,23 +4072,7 @@
       "venue": "Tapiolan Tennispuisto"
     },
     {
-      "court": "Sisätennis6",
-      "date": "2026-09-27",
-      "start": "21:00",
-      "end": "22:00",
-      "available": true,
-      "venue": "Tapiolan Tennispuisto"
-    },
-    {
       "court": "Sisätennis2",
-      "date": "2026-09-27",
-      "start": "14:30",
-      "end": "15:30",
-      "available": true,
-      "venue": "Tapiolan Tennispuisto"
-    },
-    {
-      "court": "Sisätennis1",
       "date": "2026-09-27",
       "start": "14:30",
       "end": "15:30",
@@ -5436,14 +5332,6 @@
       "date": "2026-10-05",
       "start": "21:30",
       "end": "22:30",
-      "available": true,
-      "venue": "Tapiolan Tennispuisto"
-    },
-    {
-      "court": "Sisätennis7",
-      "date": "2026-10-05",
-      "start": "09:00",
-      "end": "10:00",
       "available": true,
       "venue": "Tapiolan Tennispuisto"
     },
@@ -5594,8 +5482,24 @@
     {
       "court": "Cherry 3",
       "date": "2026-09-26",
-      "start": "19:00",
-      "end": "20:00",
+      "start": "16:00",
+      "end": "17:00",
+      "available": true,
+      "venue": "Martinmäen Tenniskeskus (Cherry Arena / Aktia Tennishall)"
+    },
+    {
+      "court": "Cherry 3",
+      "date": "2026-09-26",
+      "start": "17:00",
+      "end": "18:00",
+      "available": true,
+      "venue": "Martinmäen Tenniskeskus (Cherry Arena / Aktia Tennishall)"
+    },
+    {
+      "court": "Cherry 3",
+      "date": "2026-09-26",
+      "start": "18:00",
+      "end": "19:00",
       "available": true,
       "venue": "Martinmäen Tenniskeskus (Cherry Arena / Aktia Tennishall)"
     },
@@ -5688,14 +5592,6 @@
       "venue": "Martinmäen Tenniskeskus (Cherry Arena / Aktia Tennishall)"
     },
     {
-      "court": "Martinmäki 2",
-      "date": "2026-09-26",
-      "start": "22:30",
-      "end": "23:30",
-      "available": true,
-      "venue": "Martinmäen Tenniskeskus (Cherry Arena / Aktia Tennishall)"
-    },
-    {
       "court": "Ulkokenttä (Cherry Arena)",
       "date": "2026-09-26",
       "start": "07:00",
@@ -5842,6 +5738,14 @@
     {
       "court": "Cherry 2",
       "date": "2026-09-26",
+      "start": "19:00",
+      "end": "20:00",
+      "available": true,
+      "venue": "Martinmäen Tenniskeskus (Cherry Arena / Aktia Tennishall)"
+    },
+    {
+      "court": "Cherry 2",
+      "date": "2026-09-26",
       "start": "20:00",
       "end": "21:00",
       "available": true,
@@ -5892,6 +5796,14 @@
       "date": "2026-09-26",
       "start": "07:00",
       "end": "08:00",
+      "available": true,
+      "venue": "Martinmäen Tenniskeskus (Cherry Arena / Aktia Tennishall)"
+    },
+    {
+      "court": "Cherry 1",
+      "date": "2026-09-26",
+      "start": "17:00",
+      "end": "18:00",
       "available": true,
       "venue": "Martinmäen Tenniskeskus (Cherry Arena / Aktia Tennishall)"
     },
@@ -6164,22 +6076,6 @@
       "date": "2026-09-27",
       "start": "13:30",
       "end": "14:30",
-      "available": true,
-      "venue": "Martinmäen Tenniskeskus (Cherry Arena / Aktia Tennishall)"
-    },
-    {
-      "court": "Martinmäki 2",
-      "date": "2026-09-27",
-      "start": "15:30",
-      "end": "16:30",
-      "available": true,
-      "venue": "Martinmäen Tenniskeskus (Cherry Arena / Aktia Tennishall)"
-    },
-    {
-      "court": "Martinmäki 2",
-      "date": "2026-09-27",
-      "start": "16:30",
-      "end": "17:30",
       "available": true,
       "venue": "Martinmäen Tenniskeskus (Cherry Arena / Aktia Tennishall)"
     },
@@ -7866,14 +7762,6 @@
     {
       "court": "Cherry 3",
       "date": "2026-10-01",
-      "start": "09:00",
-      "end": "10:00",
-      "available": true,
-      "venue": "Martinmäen Tenniskeskus (Cherry Arena / Aktia Tennishall)"
-    },
-    {
-      "court": "Cherry 3",
-      "date": "2026-10-01",
       "start": "11:00",
       "end": "12:00",
       "available": true,
@@ -8116,14 +8004,6 @@
       "date": "2026-10-02",
       "start": "12:00",
       "end": "13:00",
-      "available": true,
-      "venue": "Martinmäen Tenniskeskus (Cherry Arena / Aktia Tennishall)"
-    },
-    {
-      "court": "Martinmäki 1",
-      "date": "2026-10-02",
-      "start": "20:00",
-      "end": "21:00",
       "available": true,
       "venue": "Martinmäen Tenniskeskus (Cherry Arena / Aktia Tennishall)"
     },
@@ -10802,14 +10682,6 @@
     {
       "court": "K-18",
       "date": "2026-09-26",
-      "start": "18:00",
-      "end": "19:00",
-      "available": true,
-      "venue": "Talin Tenniskeskus"
-    },
-    {
-      "court": "K-18",
-      "date": "2026-09-26",
       "start": "20:00",
       "end": "21:00",
       "available": true,
@@ -11468,14 +11340,6 @@
       "date": "2026-09-26",
       "start": "08:00",
       "end": "09:00",
-      "available": true,
-      "venue": "Talin Tenniskeskus"
-    },
-    {
-      "court": "K-11",
-      "date": "2026-09-26",
-      "start": "19:30",
-      "end": "20:30",
       "available": true,
       "venue": "Talin Tenniskeskus"
     },
@@ -11490,14 +11354,6 @@
     {
       "court": "K-11",
       "date": "2026-09-26",
-      "start": "21:00",
-      "end": "22:00",
-      "available": true,
-      "venue": "Talin Tenniskeskus"
-    },
-    {
-      "court": "K-11",
-      "date": "2026-09-26",
       "start": "21:30",
       "end": "22:30",
       "available": true,
@@ -11722,24 +11578,8 @@
     {
       "court": "K-17",
       "date": "2026-09-26",
-      "start": "20:00",
-      "end": "21:00",
-      "available": true,
-      "venue": "Talin Tenniskeskus"
-    },
-    {
-      "court": "K-17",
-      "date": "2026-09-26",
       "start": "21:00",
       "end": "22:00",
-      "available": true,
-      "venue": "Talin Tenniskeskus"
-    },
-    {
-      "court": "K-17",
-      "date": "2026-09-26",
-      "start": "21:30",
-      "end": "22:30",
       "available": true,
       "venue": "Talin Tenniskeskus"
     },
@@ -11772,14 +11612,6 @@
       "date": "2026-09-26",
       "start": "18:00",
       "end": "18:30",
-      "available": true,
-      "venue": "Talin Tenniskeskus"
-    },
-    {
-      "court": "K-2",
-      "date": "2026-09-26",
-      "start": "20:30",
-      "end": "21:30",
       "available": true,
       "venue": "Talin Tenniskeskus"
     },
@@ -11987,15 +11819,7 @@
       "court": "K-20",
       "date": "2026-09-26",
       "start": "18:00",
-      "end": "19:00",
-      "available": true,
-      "venue": "Talin Tenniskeskus"
-    },
-    {
-      "court": "K-20",
-      "date": "2026-09-26",
-      "start": "18:30",
-      "end": "19:30",
+      "end": "18:30",
       "available": true,
       "venue": "Talin Tenniskeskus"
     },
@@ -12372,14 +12196,6 @@
       "date": "2026-09-26",
       "start": "08:30",
       "end": "09:30",
-      "available": true,
-      "venue": "Talin Tenniskeskus"
-    },
-    {
-      "court": "K-25",
-      "date": "2026-09-26",
-      "start": "18:00",
-      "end": "19:00",
       "available": true,
       "venue": "Talin Tenniskeskus"
     },
@@ -13146,14 +12962,6 @@
     {
       "court": "K-23",
       "date": "2026-09-27",
-      "start": "15:00",
-      "end": "16:00",
-      "available": true,
-      "venue": "Talin Tenniskeskus"
-    },
-    {
-      "court": "K-23",
-      "date": "2026-09-27",
       "start": "21:00",
       "end": "22:00",
       "available": true,
@@ -13180,14 +12988,6 @@
       "date": "2026-09-27",
       "start": "09:00",
       "end": "10:00",
-      "available": true,
-      "venue": "Talin Tenniskeskus"
-    },
-    {
-      "court": "K-21",
-      "date": "2026-09-27",
-      "start": "13:00",
-      "end": "14:00",
       "available": true,
       "venue": "Talin Tenniskeskus"
     },
@@ -13490,14 +13290,6 @@
     {
       "court": "K-18",
       "date": "2026-09-27",
-      "start": "17:30",
-      "end": "18:30",
-      "available": true,
-      "venue": "Talin Tenniskeskus"
-    },
-    {
-      "court": "K-18",
-      "date": "2026-09-27",
       "start": "21:00",
       "end": "22:00",
       "available": true,
@@ -13642,14 +13434,6 @@
     {
       "court": "K-22",
       "date": "2026-09-27",
-      "start": "09:30",
-      "end": "10:30",
-      "available": true,
-      "venue": "Talin Tenniskeskus"
-    },
-    {
-      "court": "K-22",
-      "date": "2026-09-27",
       "start": "13:30",
       "end": "14:30",
       "available": true,
@@ -14122,8 +13906,8 @@
     {
       "court": "K-1",
       "date": "2026-09-27",
-      "start": "09:00",
-      "end": "10:00",
+      "start": "08:00",
+      "end": "09:00",
       "available": true,
       "venue": "Talin Tenniskeskus"
     },
@@ -14474,24 +14258,8 @@
     {
       "court": "K-8",
       "date": "2026-09-27",
-      "start": "20:00",
-      "end": "21:00",
-      "available": true,
-      "venue": "Talin Tenniskeskus"
-    },
-    {
-      "court": "K-8",
-      "date": "2026-09-27",
       "start": "21:00",
       "end": "22:00",
-      "available": true,
-      "venue": "Talin Tenniskeskus"
-    },
-    {
-      "court": "K-8",
-      "date": "2026-09-27",
-      "start": "21:30",
-      "end": "22:30",
       "available": true,
       "venue": "Talin Tenniskeskus"
     },
@@ -14874,14 +14642,6 @@
     {
       "court": "K-7",
       "date": "2026-09-27",
-      "start": "18:00",
-      "end": "19:00",
-      "available": true,
-      "venue": "Talin Tenniskeskus"
-    },
-    {
-      "court": "K-7",
-      "date": "2026-09-27",
       "start": "21:00",
       "end": "22:00",
       "available": true,
@@ -15042,22 +14802,6 @@
     {
       "court": "K-26",
       "date": "2026-09-27",
-      "start": "13:00",
-      "end": "14:00",
-      "available": true,
-      "venue": "Talin Tenniskeskus"
-    },
-    {
-      "court": "K-26",
-      "date": "2026-09-27",
-      "start": "14:00",
-      "end": "15:00",
-      "available": true,
-      "venue": "Talin Tenniskeskus"
-    },
-    {
-      "court": "K-26",
-      "date": "2026-09-27",
       "start": "21:00",
       "end": "22:00",
       "available": true,
@@ -15084,14 +14828,6 @@
       "date": "2026-09-27",
       "start": "09:00",
       "end": "10:00",
-      "available": true,
-      "venue": "Talin Tenniskeskus"
-    },
-    {
-      "court": "K-4",
-      "date": "2026-09-27",
-      "start": "13:00",
-      "end": "14:00",
       "available": true,
       "venue": "Talin Tenniskeskus"
     },
@@ -17346,14 +17082,6 @@
     {
       "court": "K-2",
       "date": "2026-09-28",
-      "start": "19:30",
-      "end": "20:30",
-      "available": true,
-      "venue": "Talin Tenniskeskus"
-    },
-    {
-      "court": "K-2",
-      "date": "2026-09-28",
       "start": "21:30",
       "end": "22:30",
       "available": true,
@@ -19988,14 +19716,6 @@
       "date": "2026-09-29",
       "start": "12:30",
       "end": "13:00",
-      "available": true,
-      "venue": "Talin Tenniskeskus"
-    },
-    {
-      "court": "K-1",
-      "date": "2026-09-29",
-      "start": "20:30",
-      "end": "21:30",
       "available": true,
       "venue": "Talin Tenniskeskus"
     },
@@ -21124,14 +20844,6 @@
       "date": "2026-09-29",
       "start": "06:30",
       "end": "07:30",
-      "available": true,
-      "venue": "Talin Tenniskeskus"
-    },
-    {
-      "court": "K-26",
-      "date": "2026-09-29",
-      "start": "09:00",
-      "end": "10:00",
       "available": true,
       "venue": "Talin Tenniskeskus"
     },
@@ -22858,14 +22570,6 @@
     {
       "court": "K-2",
       "date": "2026-09-30",
-      "start": "16:30",
-      "end": "17:30",
-      "available": true,
-      "venue": "Talin Tenniskeskus"
-    },
-    {
-      "court": "K-2",
-      "date": "2026-09-30",
       "start": "21:30",
       "end": "22:30",
       "available": true,
@@ -24232,22 +23936,6 @@
       "venue": "Talin Tenniskeskus"
     },
     {
-      "court": "K-22",
-      "date": "2026-10-01",
-      "start": "21:00",
-      "end": "22:00",
-      "available": true,
-      "venue": "Talin Tenniskeskus"
-    },
-    {
-      "court": "K-22",
-      "date": "2026-10-01",
-      "start": "22:00",
-      "end": "23:00",
-      "available": true,
-      "venue": "Talin Tenniskeskus"
-    },
-    {
       "court": "K-3",
       "date": "2026-10-01",
       "start": "06:30",
@@ -25330,14 +25018,6 @@
     {
       "court": "K-2",
       "date": "2026-10-02",
-      "start": "20:30",
-      "end": "21:30",
-      "available": true,
-      "venue": "Talin Tenniskeskus"
-    },
-    {
-      "court": "K-2",
-      "date": "2026-10-02",
       "start": "21:30",
       "end": "22:30",
       "available": true,
@@ -26090,22 +25770,6 @@
     {
       "court": "K-16",
       "date": "2026-10-03",
-      "start": "14:00",
-      "end": "15:00",
-      "available": true,
-      "venue": "Talin Tenniskeskus"
-    },
-    {
-      "court": "K-16",
-      "date": "2026-10-03",
-      "start": "15:00",
-      "end": "16:00",
-      "available": true,
-      "venue": "Talin Tenniskeskus"
-    },
-    {
-      "court": "K-16",
-      "date": "2026-10-03",
       "start": "19:00",
       "end": "20:00",
       "available": true,
@@ -26228,14 +25892,6 @@
       "date": "2026-10-03",
       "start": "09:00",
       "end": "10:00",
-      "available": true,
-      "venue": "Talin Tenniskeskus"
-    },
-    {
-      "court": "K-14",
-      "date": "2026-10-03",
-      "start": "13:00",
-      "end": "14:00",
       "available": true,
       "venue": "Talin Tenniskeskus"
     },
@@ -27555,15 +27211,7 @@
       "court": "K-26",
       "date": "2026-10-03",
       "start": "12:30",
-      "end": "13:30",
-      "available": true,
-      "venue": "Talin Tenniskeskus"
-    },
-    {
-      "court": "K-26",
-      "date": "2026-10-03",
-      "start": "13:00",
-      "end": "14:00",
+      "end": "13:00",
       "available": true,
       "venue": "Talin Tenniskeskus"
     },
@@ -31788,30 +31436,6 @@
       "date": "2026-09-26",
       "start": "07:30",
       "end": "08:30",
-      "available": true,
-      "venue": "Taivallahden Tenniskeskus"
-    },
-    {
-      "court": "Taivis4",
-      "date": "2026-09-26",
-      "start": "19:30",
-      "end": "20:30",
-      "available": true,
-      "venue": "Taivallahden Tenniskeskus"
-    },
-    {
-      "court": "Taivis4",
-      "date": "2026-09-26",
-      "start": "20:30",
-      "end": "21:30",
-      "available": true,
-      "venue": "Taivallahden Tenniskeskus"
-    },
-    {
-      "court": "Taivis4",
-      "date": "2026-09-26",
-      "start": "21:00",
-      "end": "22:00",
       "available": true,
       "venue": "Taivallahden Tenniskeskus"
     },
@@ -31900,30 +31524,6 @@
       "date": "2026-09-26",
       "start": "08:00",
       "end": "09:00",
-      "available": true,
-      "venue": "Taivallahden Tenniskeskus"
-    },
-    {
-      "court": "Taivis5",
-      "date": "2026-09-26",
-      "start": "19:30",
-      "end": "20:30",
-      "available": true,
-      "venue": "Taivallahden Tenniskeskus"
-    },
-    {
-      "court": "Taivis5",
-      "date": "2026-09-26",
-      "start": "20:30",
-      "end": "21:30",
-      "available": true,
-      "venue": "Taivallahden Tenniskeskus"
-    },
-    {
-      "court": "Taivis5",
-      "date": "2026-09-26",
-      "start": "21:00",
-      "end": "22:00",
       "available": true,
       "venue": "Taivallahden Tenniskeskus"
     },
@@ -31988,14 +31588,6 @@
       "date": "2026-09-26",
       "start": "07:30",
       "end": "08:30",
-      "available": true,
-      "venue": "Taivallahden Tenniskeskus"
-    },
-    {
-      "court": "Taivis1",
-      "date": "2026-09-26",
-      "start": "20:30",
-      "end": "21:30",
       "available": true,
       "venue": "Taivallahden Tenniskeskus"
     },
@@ -32250,14 +31842,6 @@
     {
       "court": "Taivismassa (ulkokenttä)",
       "date": "2026-09-27",
-      "start": "09:00",
-      "end": "10:00",
-      "available": true,
-      "venue": "Taivallahden Tenniskeskus"
-    },
-    {
-      "court": "Taivismassa (ulkokenttä)",
-      "date": "2026-09-27",
       "start": "09:30",
       "end": "10:30",
       "available": true,
@@ -32266,40 +31850,8 @@
     {
       "court": "Taivismassa (ulkokenttä)",
       "date": "2026-09-27",
-      "start": "10:00",
-      "end": "11:00",
-      "available": true,
-      "venue": "Taivallahden Tenniskeskus"
-    },
-    {
-      "court": "Taivismassa (ulkokenttä)",
-      "date": "2026-09-27",
-      "start": "10:30",
-      "end": "11:30",
-      "available": true,
-      "venue": "Taivallahden Tenniskeskus"
-    },
-    {
-      "court": "Taivismassa (ulkokenttä)",
-      "date": "2026-09-27",
-      "start": "11:00",
-      "end": "12:00",
-      "available": true,
-      "venue": "Taivallahden Tenniskeskus"
-    },
-    {
-      "court": "Taivismassa (ulkokenttä)",
-      "date": "2026-09-27",
       "start": "11:30",
       "end": "12:30",
-      "available": true,
-      "venue": "Taivallahden Tenniskeskus"
-    },
-    {
-      "court": "Taivismassa (ulkokenttä)",
-      "date": "2026-09-27",
-      "start": "12:00",
-      "end": "13:00",
       "available": true,
       "venue": "Taivallahden Tenniskeskus"
     },
@@ -32386,24 +31938,8 @@
     {
       "court": "Taivismassa (ulkokenttä)",
       "date": "2026-09-27",
-      "start": "17:30",
-      "end": "18:30",
-      "available": true,
-      "venue": "Taivallahden Tenniskeskus"
-    },
-    {
-      "court": "Taivismassa (ulkokenttä)",
-      "date": "2026-09-27",
       "start": "18:00",
       "end": "19:00",
-      "available": true,
-      "venue": "Taivallahden Tenniskeskus"
-    },
-    {
-      "court": "Taivismassa (ulkokenttä)",
-      "date": "2026-09-27",
-      "start": "19:00",
-      "end": "20:00",
       "available": true,
       "venue": "Taivallahden Tenniskeskus"
     },
@@ -32420,6 +31956,22 @@
       "date": "2026-09-27",
       "start": "07:00",
       "end": "08:00",
+      "available": true,
+      "venue": "Taivallahden Tenniskeskus"
+    },
+    {
+      "court": "Taivis6",
+      "date": "2026-09-27",
+      "start": "14:00",
+      "end": "15:00",
+      "available": true,
+      "venue": "Taivallahden Tenniskeskus"
+    },
+    {
+      "court": "Taivis6",
+      "date": "2026-09-27",
+      "start": "18:00",
+      "end": "19:00",
       "available": true,
       "venue": "Taivallahden Tenniskeskus"
     },
@@ -33866,24 +33418,8 @@
     {
       "court": "Tennis 7",
       "date": "2026-09-26",
-      "start": "18:00",
-      "end": "19:00",
-      "available": true,
-      "venue": "Rosegarden"
-    },
-    {
-      "court": "Tennis 7",
-      "date": "2026-09-26",
       "start": "19:00",
       "end": "20:00",
-      "available": true,
-      "venue": "Rosegarden"
-    },
-    {
-      "court": "Tennis 7",
-      "date": "2026-09-26",
-      "start": "19:30",
-      "end": "20:30",
       "available": true,
       "venue": "Rosegarden"
     },
@@ -33970,38 +33506,6 @@
     {
       "court": "Tennis 6",
       "date": "2026-09-26",
-      "start": "18:30",
-      "end": "19:30",
-      "available": true,
-      "venue": "Rosegarden"
-    },
-    {
-      "court": "Tennis 6",
-      "date": "2026-09-26",
-      "start": "19:30",
-      "end": "20:30",
-      "available": true,
-      "venue": "Rosegarden"
-    },
-    {
-      "court": "Tennis 6",
-      "date": "2026-09-26",
-      "start": "20:00",
-      "end": "21:00",
-      "available": true,
-      "venue": "Rosegarden"
-    },
-    {
-      "court": "Tennis 6",
-      "date": "2026-09-26",
-      "start": "20:30",
-      "end": "22:00",
-      "available": true,
-      "venue": "Rosegarden"
-    },
-    {
-      "court": "Tennis 6",
-      "date": "2026-09-26",
       "start": "21:00",
       "end": "22:00",
       "available": true,
@@ -34076,14 +33580,6 @@
       "date": "2026-09-26",
       "start": "21:00",
       "end": "22:00",
-      "available": true,
-      "venue": "Rosegarden"
-    },
-    {
-      "court": "Tennis 5",
-      "date": "2026-09-26",
-      "start": "16:30",
-      "end": "17:30",
       "available": true,
       "venue": "Rosegarden"
     },
@@ -34298,22 +33794,6 @@
     {
       "court": "Tennis 8",
       "date": "2026-09-26",
-      "start": "18:00",
-      "end": "19:00",
-      "available": true,
-      "venue": "Rosegarden"
-    },
-    {
-      "court": "Tennis 8",
-      "date": "2026-09-26",
-      "start": "18:30",
-      "end": "19:30",
-      "available": true,
-      "venue": "Rosegarden"
-    },
-    {
-      "court": "Tennis 8",
-      "date": "2026-09-26",
       "start": "19:00",
       "end": "20:00",
       "available": true,
@@ -34322,14 +33802,6 @@
     {
       "court": "Tennis 8",
       "date": "2026-09-26",
-      "start": "19:30",
-      "end": "20:30",
-      "available": true,
-      "venue": "Rosegarden"
-    },
-    {
-      "court": "Tennis 8",
-      "date": "2026-09-26",
       "start": "20:00",
       "end": "21:00",
       "available": true,
@@ -34402,16 +33874,8 @@
     {
       "court": "Tennis 1",
       "date": "2026-09-27",
-      "start": "16:00",
-      "end": "17:00",
-      "available": true,
-      "venue": "Rosegarden"
-    },
-    {
-      "court": "Tennis 1",
-      "date": "2026-09-27",
-      "start": "17:00",
-      "end": "18:00",
+      "start": "19:00",
+      "end": "20:00",
       "available": true,
       "venue": "Rosegarden"
     },
@@ -34516,14 +33980,6 @@
       "date": "2026-09-27",
       "start": "13:30",
       "end": "14:30",
-      "available": true,
-      "venue": "Rosegarden"
-    },
-    {
-      "court": "Tennis 7",
-      "date": "2026-09-27",
-      "start": "17:30",
-      "end": "18:30",
       "available": true,
       "venue": "Rosegarden"
     },
@@ -34875,7 +34331,7 @@
       "court": "Tennis 3",
       "date": "2026-09-27",
       "start": "13:00",
-      "end": "14:00",
+      "end": "14:30",
       "available": true,
       "venue": "Rosegarden"
     },
@@ -34890,39 +34346,7 @@
     {
       "court": "Tennis 3",
       "date": "2026-09-27",
-      "start": "14:00",
-      "end": "15:00",
-      "available": true,
-      "venue": "Rosegarden"
-    },
-    {
-      "court": "Tennis 3",
-      "date": "2026-09-27",
-      "start": "14:30",
-      "end": "15:30",
-      "available": true,
-      "venue": "Rosegarden"
-    },
-    {
-      "court": "Tennis 3",
-      "date": "2026-09-27",
-      "start": "15:00",
-      "end": "16:00",
-      "available": true,
-      "venue": "Rosegarden"
-    },
-    {
-      "court": "Tennis 3",
-      "date": "2026-09-27",
       "start": "15:30",
-      "end": "17:00",
-      "available": true,
-      "venue": "Rosegarden"
-    },
-    {
-      "court": "Tennis 3",
-      "date": "2026-09-27",
-      "start": "16:00",
       "end": "17:00",
       "available": true,
       "venue": "Rosegarden"
@@ -34971,7 +34395,7 @@
       "court": "Tennis 10",
       "date": "2026-09-27",
       "start": "12:30",
-      "end": "13:30",
+      "end": "14:00",
       "available": true,
       "venue": "Rosegarden"
     },
@@ -34986,39 +34410,7 @@
     {
       "court": "Tennis 10",
       "date": "2026-09-27",
-      "start": "13:30",
-      "end": "14:30",
-      "available": true,
-      "venue": "Rosegarden"
-    },
-    {
-      "court": "Tennis 10",
-      "date": "2026-09-27",
-      "start": "14:00",
-      "end": "15:00",
-      "available": true,
-      "venue": "Rosegarden"
-    },
-    {
-      "court": "Tennis 10",
-      "date": "2026-09-27",
-      "start": "14:30",
-      "end": "15:30",
-      "available": true,
-      "venue": "Rosegarden"
-    },
-    {
-      "court": "Tennis 10",
-      "date": "2026-09-27",
       "start": "15:00",
-      "end": "16:30",
-      "available": true,
-      "venue": "Rosegarden"
-    },
-    {
-      "court": "Tennis 10",
-      "date": "2026-09-27",
-      "start": "15:30",
       "end": "16:30",
       "available": true,
       "venue": "Rosegarden"
@@ -35658,24 +35050,8 @@
     {
       "court": "Tennis 3",
       "date": "2026-09-28",
-      "start": "12:00",
-      "end": "13:00",
-      "available": true,
-      "venue": "Rosegarden"
-    },
-    {
-      "court": "Tennis 3",
-      "date": "2026-09-28",
       "start": "13:00",
       "end": "14:00",
-      "available": true,
-      "venue": "Rosegarden"
-    },
-    {
-      "court": "Tennis 3",
-      "date": "2026-09-28",
-      "start": "13:30",
-      "end": "14:30",
       "available": true,
       "venue": "Rosegarden"
     },
@@ -35843,31 +35219,7 @@
       "court": "Tennis 4",
       "date": "2026-09-28",
       "start": "11:30",
-      "end": "12:30",
-      "available": true,
-      "venue": "Rosegarden"
-    },
-    {
-      "court": "Tennis 4",
-      "date": "2026-09-28",
-      "start": "12:30",
-      "end": "13:30",
-      "available": true,
-      "venue": "Rosegarden"
-    },
-    {
-      "court": "Tennis 4",
-      "date": "2026-09-28",
-      "start": "13:00",
-      "end": "14:00",
-      "available": true,
-      "venue": "Rosegarden"
-    },
-    {
-      "court": "Tennis 4",
-      "date": "2026-09-28",
-      "start": "13:30",
-      "end": "14:30",
+      "end": "13:00",
       "available": true,
       "venue": "Rosegarden"
     },
@@ -35876,14 +35228,6 @@
       "date": "2026-09-28",
       "start": "14:00",
       "end": "15:00",
-      "available": true,
-      "venue": "Rosegarden"
-    },
-    {
-      "court": "Tennis 4",
-      "date": "2026-09-28",
-      "start": "14:30",
-      "end": "16:00",
       "available": true,
       "venue": "Rosegarden"
     },
@@ -37066,24 +36410,8 @@
     {
       "court": "Tennis 6",
       "date": "2026-09-30",
-      "start": "20:00",
-      "end": "21:00",
-      "available": true,
-      "venue": "Rosegarden"
-    },
-    {
-      "court": "Tennis 6",
-      "date": "2026-09-30",
       "start": "21:00",
       "end": "22:00",
-      "available": true,
-      "venue": "Rosegarden"
-    },
-    {
-      "court": "Tennis 6",
-      "date": "2026-09-30",
-      "start": "21:30",
-      "end": "22:30",
       "available": true,
       "venue": "Rosegarden"
     },
@@ -38986,40 +38314,8 @@
     {
       "court": "Tennis 9",
       "date": "2026-10-02",
-      "start": "10:30",
-      "end": "11:30",
-      "available": true,
-      "venue": "Rosegarden"
-    },
-    {
-      "court": "Tennis 9",
-      "date": "2026-10-02",
-      "start": "11:30",
-      "end": "12:30",
-      "available": true,
-      "venue": "Rosegarden"
-    },
-    {
-      "court": "Tennis 9",
-      "date": "2026-10-02",
-      "start": "12:00",
-      "end": "13:00",
-      "available": true,
-      "venue": "Rosegarden"
-    },
-    {
-      "court": "Tennis 9",
-      "date": "2026-10-02",
       "start": "12:30",
       "end": "13:30",
-      "available": true,
-      "venue": "Rosegarden"
-    },
-    {
-      "court": "Tennis 9",
-      "date": "2026-10-02",
-      "start": "13:00",
-      "end": "14:00",
       "available": true,
       "venue": "Rosegarden"
     },
@@ -39850,6 +39146,14 @@
     {
       "court": "Tennis 2",
       "date": "2026-10-03",
+      "start": "13:00",
+      "end": "14:00",
+      "available": true,
+      "venue": "Rosegarden"
+    },
+    {
+      "court": "Tennis 2",
+      "date": "2026-10-03",
       "start": "16:00",
       "end": "17:00",
       "available": true,
@@ -41468,14 +40772,6 @@
       "date": "2026-10-04",
       "start": "13:00",
       "end": "14:30",
-      "available": true,
-      "venue": "Rosegarden"
-    },
-    {
-      "court": "Tennis 4",
-      "date": "2026-10-04",
-      "start": "15:30",
-      "end": "17:00",
       "available": true,
       "venue": "Rosegarden"
     },
