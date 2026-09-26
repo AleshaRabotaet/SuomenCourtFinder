@@ -21,7 +21,6 @@ VENUES = [
         "playfi_slug": "smashcenter",
         "playfi_location": "1",
         "playfi_sport": "7",
-        "days_ahead": 14,
     },
     {
         "name": "Tapiolan Tennispuisto",
@@ -34,7 +33,6 @@ VENUES = [
         "fetcher": "cintoia",
         "cintoia_customerid": "tennispuisto-rTVILEOT",
         "cintoia_origin": "https://tennispuisto.cintoia.com",
-        "days_ahead": 14,
     },
     {
         "name": "Martinmäen Tenniskeskus (Cherry Arena / Aktia Tennishall)",
@@ -45,7 +43,6 @@ VENUES = [
         "fetcher": "cintoia",
         "cintoia_customerid": "evs-4FD8m7rCa7wOuCADvzZZ",
         "cintoia_origin": "https://evs.feel.cintoia.com",
-        "days_ahead": 14,
     },
     {
         "name": "Talin Tenniskeskus",
@@ -59,7 +56,6 @@ VENUES = [
         # Tali and Taivallahti share this one Cintoia backend; split by
         # each court's category (see fetchers/cintoia.py).
         "cintoia_categories": ["tennis", "ulkokentät"],
-        "days_ahead": 14,
     },
     {
         "name": "Taivallahden Tenniskeskus",
@@ -71,7 +67,6 @@ VENUES = [
         "cintoia_customerid": "tali-2GjtFLost8pDf0dWwmNc",
         "cintoia_origin": "https://talitaivallahti.feel.cintoia.com",
         "cintoia_categories": ["tennis taivallahti"],
-        "days_ahead": 14,
     },
     {
         "name": "Rosegarden",
@@ -85,6 +80,5 @@ VENUES = [
         # Rosegarden's backend also has padel courts and ball machines;
         # this finder is tennis-only.
         "cintoia_categories": ["tennis"],
-        "days_ahead": 15,
     },
 ]
